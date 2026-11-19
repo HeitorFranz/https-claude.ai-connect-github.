@@ -3,7 +3,6 @@ import arquivosJson from '../../data/arquivos_drive.json'
 import conhecimentoJson from '../../data/conhecimento.json'
 import matrizJson from '../../data/matriz_quimica_material.json'
 import fichasJson from '../../data/fichas_tecnicas.json'
-import passosVendaJson from '../../data/passos_venda.json'
 
 export type Produto = {
   id: string
@@ -42,7 +41,6 @@ export const matriz = matrizJson as {
   dica_por_material: Record<string, string>
 }
 export const fichas = fichasJson as Record<string, Ficha>
-export const passosVenda = passosVendaJson
 
 const arquivoPorId = new Map(arquivos.map((a) => [a.id, a]))
 export const produtoPorId = new Map(produtos.map((p) => [p.id, p]))
@@ -76,12 +74,12 @@ export function normalizar(s: string): string {
 }
 
 export const rotuloTipo: Record<TipoArquivo, string> = {
-  video: '🎥 Vídeos',
-  treinamento: '🎓 Treinamento',
-  boletim: '📄 Boletim técnico',
-  arte: '🖼 Artes',
-  banner: '📢 Banner',
-  catalogo: '📢 Catálogo',
-  foto: '📷 Fotos',
+  video: 'Vídeos',
+  treinamento: 'Treinamentos',
+  boletim: 'Boletins técnicos',
+  arte: 'Artes',
+  banner: 'Banners',
+  catalogo: 'Catálogos',
+  foto: 'Fotos',
 }
-export const ordemTipos: TipoArquivo[] = ['video', 'treinamento', 'boletim', 'arte', 'banner', 'catalogo', 'foto']
+export const ordemTipos: TipoArquivo[] = ['video', 'treinamento', 'boletim', 'foto', 'arte', 'banner', 'catalogo']

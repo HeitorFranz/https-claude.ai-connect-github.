@@ -1,6 +1,6 @@
-import { conhecimento, passosVenda } from '../../lib/dados'
+import { conhecimento } from '../../lib/dados'
 import Html from '../../components/Html'
-import { BotaoCopiar, Cartao, Titulo, linkWhatsApp } from '../../components/ui'
+import { Cartao, Titulo } from '../../components/ui'
 
 export function Conceitos() {
   return (
@@ -27,7 +27,6 @@ export function Quimicas() {
               <p className="m-0">{q.o_que_e}</p>
               <p className="m-0"><b className="text-ok">Vai bem:</b> {q.vai_bem}</p>
               <p className="m-0"><b className="text-no">Evitar:</b> {q.evitar}</p>
-              <p className="m-0 text-mute"><b>Na venda:</b> {q.na_venda}</p>
             </div>
           </div>
         ))}
@@ -59,12 +58,12 @@ export function Materiais() {
 export function Problemas() {
   return (
     <div>
-      <Titulo>Problema → solução</Titulo>
+      <Titulo sub="O problema que aparece na obra e o produto que resolve.">Problemas e soluções</Titulo>
       <div className="grid gap-3 sm:grid-cols-2">
         {conhecimento.problema_solucao.map((p) => (
           <Cartao key={p.cliente_diz}>
             <p className="m-0 font-bold text-lg">{p.cliente_diz}</p>
-            <p className="m-0 mt-1"><b className="text-red">Vender:</b> {p.vender}</p>
+            <p className="m-0 mt-1"><b className="text-ok">Solução:</b> {p.vender}</p>
             <p className="m-0 mt-1 text-mute">{p.porque}</p>
           </Cartao>
         ))}
@@ -89,23 +88,10 @@ export function Aplicar() {
   )
 }
 
-export function Segmentos() {
-  return (
-    <div>
-      <Titulo>Clientes e segmentos</Titulo>
-      <div className="grid gap-3 sm:grid-cols-2">
-        {conhecimento.segmentos.map((s) => (
-          <Cartao key={s.segmento}><h2 className="text-lg mb-1">{s.segmento}</h2><p className="m-0">{s.mix}</p></Cartao>
-        ))}
-      </div>
-    </div>
-  )
-}
-
 export function Regras() {
   return (
     <div>
-      <Titulo sub="Valem para qualquer marca e qualquer venda.">Regras de ouro</Titulo>
+      <Titulo sub="Valem para qualquer marca e qualquer aplicação.">Regras de ouro</Titulo>
       <ol className="list-none p-0 m-0 grid gap-3">
         {conhecimento.regras_tecnicas_gerais.map((r, i) => (
           <li key={r} className="flex gap-3 bg-panel border border-line rounded-xl p-4">
@@ -114,57 +100,6 @@ export function Regras() {
           </li>
         ))}
       </ol>
-    </div>
-  )
-}
-
-export function Vender() {
-  const m = conhecimento.marca
-  return (
-    <div className="grid gap-8">
-      <div>
-        <Titulo>Como vender</Titulo>
-        <ol className="list-none p-0 m-0 grid gap-3 sm:grid-cols-2">
-          {passosVenda.map((p, i) => (
-            <li key={p.titulo} className="bg-panel border border-line rounded-xl p-4">
-              <span className="text-xs font-bold text-red">PASSO {i + 1}</span>
-              <h2 className="text-lg my-1">{p.titulo}</h2>
-              <p className="m-0">{p.texto}</p>
-            </li>
-          ))}
-        </ol>
-      </div>
-      <section>
-        <h2 className="text-2xl mb-3">Argumentos da marca</h2>
-        <div className="grid gap-3 sm:grid-cols-2">
-          <Cartao><b className="text-red text-xs uppercase">Prêmio</b><p className="m-0 mt-1">{m.top_of_mind}</p></Cartao>
-          <Cartao><b className="text-red text-xs uppercase">Empresa</b><p className="m-0 mt-1">{m.empresa}</p></Cartao>
-          <Cartao><b className="text-red text-xs uppercase">Slogan</b><p className="m-0 mt-1 text-xl font-extrabold">"{m.slogan}"</p></Cartao>
-          <Cartao><b className="text-red text-xs uppercase">Segmentos do catálogo</b><p className="m-0 mt-1">{m.segmentos_catalogo.join(' · ')}</p></Cartao>
-        </div>
-      </section>
-      <section>
-        <h2 className="text-2xl mb-3">Objeções comuns</h2>
-        <div className="grid gap-3">
-          {conhecimento.objecoes.map((o) => (
-            <Cartao key={o.objecao}><p className="m-0 font-bold">{o.objecao}</p><p className="m-0 mt-1">{o.resposta}</p></Cartao>
-          ))}
-        </div>
-      </section>
-      <section>
-        <h2 className="text-2xl mb-3">Mensagens prontas para WhatsApp</h2>
-        <div className="grid gap-3">
-          {conhecimento.mensagens_whatsapp.map((t) => (
-            <Cartao key={t}>
-              <p className="m-0 whitespace-pre-line">{t}</p>
-              <div className="flex gap-2 mt-3">
-                <BotaoCopiar texto={t} />
-                <a href={linkWhatsApp(t)} target="_blank" rel="noreferrer" className="h-10 px-3 rounded-lg bg-ok text-white text-sm font-bold no-underline grid place-items-center">Enviar no WhatsApp</a>
-              </div>
-            </Cartao>
-          ))}
-        </div>
-      </section>
     </div>
   )
 }

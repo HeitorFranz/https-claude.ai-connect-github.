@@ -1,48 +1,51 @@
+import { useState } from 'react'
+import { ExternalLink } from 'lucide-react'
 import { ordemTipos, rotuloTipo, type Arquivo } from '../lib/dados'
-import { BotaoCopiar, linkWhatsApp } from './ui'
+import { iconeTipo, IconePasta } from './icones'
+import { BotaoCopiar } from './ui'
+
+const temMiniatura = (a: Arquivo) => !a.pasta && (a.tipo === 'arte' || a.tipo === 'banner' || a.tipo === 'foto')
 
 function Miniatura({ a }: { a: Arquivo }) {
-  const icone = a.pasta ? '📁' : a.tipo === 'video' ? '🎥' : a.tipo === 'boletim' ? '📄' : '🖼'
-  if (a.pasta || a.tipo === 'video' || a.tipo === 'boletim' || a.tipo === 'treinamento')
-    return <div className="w-14 h-14 shrink-0 rounded-lg bg-bg grid place-items-center text-2xl" aria-hidden>{icone}</div>
+  const [falhou, setFalhou] = useState(false)
+  const Icone = a.pasta ? IconePasta : iconeTipo[a.tipo]
+  if (!temMiniatura(a) || falhou)
+    return <div className="w-14 h-14 shrink-0 rounded-lg bg-bg grid place-items-center text-mute" aria-hidden><Icone size={24} /></div>
   return (
-    <div className="w-14 h-14 shrink-0 rounded-lg bg-bg grid place-items-center text-2xl overflow-hidden" aria-hidden>
-      <img src={`https://drive.google.com/thumbnail?id=${a.id}&sz=w400`} alt="" loading="lazy"
-        className="w-full h-full object-cover" onError={(e) => { e.currentTarget.replaceWith(document.createTextNode(icone)) }} />
+    <div className="w-14 h-14 shrink-0 rounded-lg bg-bg overflow-hidden" aria-hidden>
+      <img src={`https://drive.google.com/thumbnail?id=${a.id}&sz=w400`} alt="" loading="lazy" width={56} height={56}
+        className="w-full h-full object-cover" onError={() => setFalhou(true)} />
     </div>
   )
 }
 
-export function ItemArquivo({ a, contexto }: { a: Arquivo; contexto?: string }) {
-  const msg = `${contexto ? contexto + ' — ' : ''}${a.titulo}\n${a.url}`
+export function ItemArquivo({ a }: { a: Arquivo }) {
   return (
-    <li className="flex gap-3 items-start py-3 border-b border-line last:border-0">
+    <li className="flex gap-3 items-center py-3 border-b border-line last:border-0">
       <Miniatura a={a} />
-      <div className="grid gap-2 flex-1">
-        <a href={a.url} target="_blank" rel="noreferrer" className="font-medium text-ink no-underline hover:text-red">
-          {a.titulo} {a.pasta && <span className="text-xs text-mute">(pasta)</span>}
-        </a>
-        <div className="flex gap-2 flex-wrap">
-          <a href={a.url} target="_blank" rel="noreferrer" className="h-10 px-3 rounded-lg border border-line bg-bg text-sm font-bold no-underline text-ink grid place-items-center">Abrir</a>
-          <BotaoCopiar texto={a.url} rotulo="Copiar link" />
-          <a href={linkWhatsApp(msg)} target="_blank" rel="noreferrer" className="h-10 px-3 rounded-lg bg-ok text-white text-sm font-bold no-underline grid place-items-center">WhatsApp</a>
-        </div>
-      </div>
+      <a href={a.url} target="_blank" rel="noreferrer" className="flex-1 font-medium text-ink no-underline hover:text-red transition-colors duration-150 leading-snug">
+        {a.titulo} {a.pasta && <span className="text-xs text-mute">(pasta)</span>}
+        <ExternalLink size={14} className="inline ml-1 text-mute" aria-label="abre no Drive" />
+      </a>
+      <BotaoCopiar texto={a.url} rotulo="Copiar link" />
     </li>
   )
 }
 
-export default function ArquivosRelacionados({ lista, contexto }: { lista: Arquivo[]; contexto?: string }) {
-  if (!lista.length) return <p className="text-mute text-sm">Nenhum arquivo do Drive vinculado. <span className="text-mid font-bold">Confirmar.</span></p>
+export default function ArquivosRelacionados({ lista }: { lista: Arquivo[] }) {
+  if (!lista.length) return <p className="text-mute text-sm">Nenhum arquivo do Drive ligado a este produto ainda.</p>
   return (
-    <div className="grid gap-4">
+    <div className="grid gap-3">
       {ordemTipos.map((t) => {
         const doTipo = lista.filter((a) => a.tipo === t)
         if (!doTipo.length) return null
+        const Icone = iconeTipo[t]
         return (
-          <details key={t} open={doTipo.length <= 6}>
-            <summary className="cursor-pointer font-bold py-1">{rotuloTipo[t]} <span className="text-mute font-normal">({doTipo.length})</span></summary>
-            <ul className="list-none p-0 m-0">{doTipo.map((a) => <ItemArquivo key={a.id} a={a} contexto={contexto} />)}</ul>
+          <details key={t} open={doTipo.length <= 6} className="bg-panel border border-line rounded-xl px-4">
+            <summary className="cursor-pointer font-bold py-3 flex items-center gap-2 min-h-11">
+              <Icone size={18} className="text-red" aria-hidden /> {rotuloTipo[t]} <span className="text-mute font-normal">({doTipo.length})</span>
+            </summary>
+            <ul className="list-none p-0 m-0 border-t border-line">{doTipo.map((a) => <ItemArquivo key={a.id} a={a} />)}</ul>
           </details>
         )
       })}

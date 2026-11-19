@@ -1,7 +1,7 @@
 import { useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 
-export function Titulo({ children, voltar = '/conhecimento', sub }: { children: ReactNode; voltar?: string; sub?: ReactNode }) {
+export function Titulo({ children, voltar = '/produtos', sub }: { children: ReactNode; voltar?: string; sub?: ReactNode }) {
   return (
     <div className="mb-5 grid gap-1">
       <Link to={voltar} className="text-sm font-medium no-underline">← Voltar</Link>
@@ -39,20 +39,16 @@ export function BotaoCopiar({ texto, rotulo = 'Copiar', className = '' }: { text
     setTimeout(() => setOk(false), 1500)
   }
   return (
-    <button type="button" onClick={copiar} className={`h-10 px-3 rounded-lg border border-line bg-bg text-sm font-bold ${className}`}>
+    <button type="button" onClick={copiar} className={`h-11 px-3 shrink-0 rounded-lg border border-line bg-bg text-sm font-bold cursor-pointer transition-colors duration-150 hover:border-red ${className}`}>
       {ok ? 'Copiado ✓' : rotulo}
     </button>
   )
 }
 
-export function linkWhatsApp(texto: string) {
-  return `https://wa.me/?text=${encodeURIComponent(texto)}`
-}
-
 export function Chip({ ativo, onClick, children }: { ativo: boolean; onClick: () => void; children: ReactNode }) {
   return (
     <button type="button" onClick={onClick} aria-pressed={ativo}
-      className={`h-10 px-3 rounded-full border text-sm font-medium whitespace-nowrap ${ativo ? 'bg-red text-white border-red' : 'bg-panel border-line text-ink'}`}>
+      className={`h-11 px-4 rounded-full border text-sm font-medium whitespace-nowrap cursor-pointer transition-colors duration-150 ${ativo ? 'bg-red text-white border-red' : 'bg-panel border-line text-ink'}`}>
       {children}
     </button>
   )

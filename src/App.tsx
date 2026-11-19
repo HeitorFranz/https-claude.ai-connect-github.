@@ -1,12 +1,11 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AuthProvider } from './auth/AuthProvider'
 import RequireAuth from './auth/RequireAuth'
 import Layout from './components/Layout'
 import Login from './pages/Login'
 import Inicio from './pages/Inicio'
-import EmBreve from './pages/EmBreve'
-import Conhecimento from './pages/conhecimento'
-import Produto from './pages/Produto'
+import AreaProdutos from './pages/produtos'
+import Consulta from './pages/consulta/Consulta'
 
 export default function App() {
   return (
@@ -17,10 +16,9 @@ export default function App() {
           <Route element={<RequireAuth />}>
             <Route element={<Layout />}>
               <Route index element={<Inicio />} />
-              <Route path="conhecimento/*" element={<Conhecimento />} />
-              <Route path="consulta" element={<EmBreve titulo="Consulta" />} />
-              <Route path="produto/:id" element={<Produto />} />
-              <Route path="*" element={<EmBreve titulo="Página não encontrada" />} />
+              <Route path="consulta" element={<Consulta />} />
+              <Route path="produtos/*" element={<AreaProdutos />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
           </Route>
         </Routes>
