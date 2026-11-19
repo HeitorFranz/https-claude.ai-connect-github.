@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Identidade (SPEC §7): pedra, tinta, vermelho tijolo, amarelo segurança, verde/vermelho/âmbar */
+:root {
+  color-scheme: light;
+  --bg: #efece7;
+  --panel: #ffffff;
+  --ink: #151311;
+  --mute: #5d5750;
+  --line: #d6d0c7;
+  --red: #c8371e;
+  --redbg: #fbe3dd;
+  --yel: #f2c230;
+  --ok: #1f8a4c;
+  --no: #c8371e;
+  --mid: #c98a00;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #161412; --panel: #211e1b; --ink: #efebe5; --mute: #a9a196; --line: #3a3530;
+    --red: #ff6a4d; --redbg: #3a1d16; --yel: #e8b820; --ok: #4fd08a; --no: #ff6a4d; --mid: #f0b93a;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #161412; --panel: #211e1b; --ink: #efebe5; --mute: #a9a196; --line: #3a3530;
+  --red: #ff6a4d; --redbg: #3a1d16; --yel: #e8b820; --ok: #4fd08a; --no: #ff6a4d; --mid: #f0b93a;
+}
+
+@theme inline {
+  --font-sans: "Schibsted Grotesk", system-ui, sans-serif;
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-ink: var(--ink);
+  --color-mute: var(--mute);
+  --color-line: var(--line);
+  --color-red: var(--red);
+  --color-redbg: var(--redbg);
+  --color-yel: var(--yel);
+  --color-ok: var(--ok);
+  --color-no: var(--no);
+  --color-mid: var(--mid);
+}
+
+html, body { overflow-x: clip; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 "Schibsted Grotesk", system-ui, sans-serif; }
+h1, h2, h3 { font-weight: 800; line-height: 1.08; letter-spacing: -0.02em; text-wrap: balance; }
+a { color: var(--red); }
+:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }

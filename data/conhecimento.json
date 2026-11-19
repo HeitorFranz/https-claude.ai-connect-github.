@@ -1,0 +1,717 @@
+{
+  "conceitos": [
+    {
+      "titulo": "Selante × adesivo × cola",
+      "texto_html": "<b>Selante</b> veda (impede água, ar, pó) e precisa ser flexível. <b>Adesivo</b> cola e segura peso. <b>Cola</b> é o adesivo do dia a dia (papel, madeira, instantânea). Muitos híbridos fazem as duas coisas."
+    },
+    {
+      "titulo": "Cura",
+      "texto_html": "É o produto deixar de ser pasta e virar borracha ou sólido. Silicones e híbridos curam com a <b>umidade do ar</b>; acrílicos secam com a <b>evaporação da água</b> (precisam de calor, chuva lava); epóxi e chumbador curam por <b>mistura de dois componentes</b>."
+    },
+    {
+      "titulo": "Formação de película",
+      "texto_html": "Tempo até a superfície \"pegar pele\" (ex.: Aluzinco 6 min, PU 40 20 min). Acabamento e retirada da fita crepe têm que ser feitos antes disso."
+    },
+    {
+      "titulo": "Taxa de cura",
+      "texto_html": "Quantos milímetros curam por dia de fora para dentro (ex.: 2 a 4 mm/24h). Cordão grosso demora mais dias para curar por inteiro."
+    },
+    {
+      "titulo": "Poroso × não poroso",
+      "texto_html": "Poroso absorve: concreto, madeira, gesso, tijolo. Não poroso: vidro, metal, cerâmica esmaltada, plástico. Acético só vai bem em não poroso."
+    },
+    {
+      "titulo": "Flexibilidade e alongamento",
+      "texto_html": "Quanto o produto estica sem rasgar (Acético 500%, PU 40 Multiuso 100%, High Tack 150%). Junta que dilata com o sol precisa de produto elástico."
+    },
+    {
+      "titulo": "Dureza Shore A",
+      "texto_html": "Mede se a borracha curada é mole ou firme. Acético 14 (bem mole), Aluzinco 30, PU 40 40, Parabrisas e High Tack 50 (firmes, seguram mais)."
+    },
+    {
+      "titulo": "Junta de movimentação",
+      "texto_html": "Junta feita para dilatar e contrair (piso, fachada, estrutura). Pede produto próprio: Híbrido Construção, PU 44, PU 40 Profissional. O PU 40 Multiuso NÃO é para isso."
+    },
+    {
+      "titulo": "Fungicida",
+      "texto_html": "Aditivo que impede mofo. Ótimo em banheiro e cozinha; proibido onde há seres vivos (aquário)."
+    },
+    {
+      "titulo": "Pintável",
+      "texto_html": "Aceita tinta por cima depois de curado. Híbridos e acrílicos: sim. Silicones (acético, neutro, Aluzinco): não."
+    },
+    {
+      "titulo": "Tack (agarre inicial)",
+      "texto_html": "Força com que o adesivo segura logo ao encostar, antes de curar. High Tack Ultra e Fixa Cubas têm tack alto: a peça não escorrega."
+    },
+    {
+      "titulo": "Tensão superficial",
+      "texto_html": "Plásticos como PE, PP, nylon e teflon são \"escorregadios\" quimicamente: nenhum selante gruda. Precisa de primer (promotor de adesão). Vale para todas as marcas."
+    }
+  ],
+  "quimicas": [
+    {
+      "cor": "#3a7bd5",
+      "nome": "Silicone acético",
+      "o_que_e": "Cura liberando ácido acético (cheiro de vinagre). Muito elástico e com antifungo.",
+      "vai_bem": "Vidro, alumínio, azulejo, louça, box, esquadria.",
+      "evitar": "Concreto, metais que oxidam, espelho, vidro laminado, policarbonato, superfície pintada. Não aceita tinta.",
+      "na_venda": "O mais barato e o que mais gira. Produto de entrada."
+    },
+    {
+      "cor": "#1f8a4c",
+      "nome": "Silicone neutro (oxima)",
+      "o_que_e": "Cura sem ácido e sem cheiro forte. Não oxida metal.",
+      "vai_bem": "Praticamente tudo: concreto, madeira, metal, galvanizado, policarbonato. Versões de alta temperatura (até 350 °C intermitente).",
+      "evitar": "PE/PP, aquário. Não aceita pintura.",
+      "na_venda": "Mais caro que o acético, mas resolve onde o acético falha."
+    },
+    {
+      "cor": "#c98a00",
+      "nome": "Acrílico base água",
+      "o_que_e": "Pasta à base de água, seca por evaporação. Lixável e pintável.",
+      "vai_bem": "Trincas, frestas, rodapés, gesso, isopor, calhas (Veda Calhas), interiores.",
+      "evitar": "Áreas molhadas o tempo todo, aplicar com chuva vindo. Menos elástico que silicone.",
+      "na_venda": "Barato, fácil, limpa com água. Ótimo para pintor e consumidor."
+    },
+    {
+      "cor": "#c8371e",
+      "nome": "Híbrido (MS / silano modificado)",
+      "o_que_e": "A tecnologia do PU 40, Fixa Tudo, High Tack. Cura com a umidade, adere em quase tudo, aceita tinta, sem solvente.",
+      "vai_bem": "Concreto, alvenaria, metal, madeira, vidro, cerâmica, pedra, até superfície úmida (High Tack).",
+      "evitar": "PE/PP/nylon/teflon/acrílico, aquário, fachada de vidro estrutural.",
+      "na_venda": "O \"coringa\". Se não sabe o que indicar, provavelmente é um híbrido."
+    },
+    {
+      "cor": "#7a3fb0",
+      "nome": "Poliuretano (isocianato)",
+      "o_que_e": "PU \"clássico\", da linha U-Flex PU 44 e PU 55. Alta resistência mecânica.",
+      "vai_bem": "Junta de piso, estrutura metálica, carroceria (PU 44); para-brisa e sacada (PU 55).",
+      "evitar": "Exposição longa ao sol sem proteção; plásticos de baixa tensão.",
+      "na_venda": "Produto de profissional: funileiro, autovidro, serralheiro, construtora."
+    },
+    {
+      "cor": "#5d5750",
+      "nome": "Espuma de PU",
+      "o_que_e": "Aerossol que expande e endurece. Preenche, fixa e isola.",
+      "vai_bem": "Batente de porta e janela, vãos, ar-condicionado, isolamento térmico e acústico.",
+      "evitar": "Exposta ao sol (degrada com UV: cubra com tinta ou massa).",
+      "na_venda": "Gira muito em material de construção. Pro = mais densa."
+    },
+    {
+      "cor": "#0f6e6e",
+      "nome": "Epóxi e poliéster (bicomponentes)",
+      "o_que_e": "Dois componentes que reagem ao misturar: Chumbador Químico (poliéster) e Epóxi PRO MF/TIX.",
+      "vai_bem": "Ancorar barras, parafusos e vergalhões em concreto; colagem estrutural.",
+      "evitar": "Cargas críticas no chumbador (é para cargas médias, não críticas).",
+      "na_venda": "Substitui bucha em base fraca. Venda para construtora e serralheria."
+    },
+    {
+      "cor": "#b0306a",
+      "nome": "Cianoacrilato e PVA",
+      "o_que_e": "Cianoacrilato = cola instantânea (Bond 007). PVA = cola branca e cola de madeira.",
+      "vai_bem": "Reparos rápidos (Bond), papel, artesanato, MDF, madeira.",
+      "evitar": "Vedação ou preenchimento de folga (não são selantes).",
+      "na_venda": "Itens de giro em papelaria, bazar, mercado e marcenaria."
+    }
+  ],
+  "materiais": [
+    {
+      "material": "Vidro comum",
+      "cuidado": "Não poroso, liso. Limpar com álcool isopropílico.",
+      "indicar": "Acético, neutro, PU 40 Multiuso, Crystal Clear",
+      "evitar": "—"
+    },
+    {
+      "material": "Vidro laminado / duplo",
+      "cuidado": "O acético ataca o PVB entre as lâminas.",
+      "indicar": "Neutro (Doble Vidrio na linha LATAM), híbrido",
+      "evitar": "Acético"
+    },
+    {
+      "material": "Espelho",
+      "cuidado": "A camada de prata mancha com ácido.",
+      "indicar": "Fixa Espelhos",
+      "evitar": "Acético"
+    },
+    {
+      "material": "Alumínio (esquadria)",
+      "cuidado": "Não poroso, o mercado clássico do acético.",
+      "indicar": "Acético Uso Geral/Profissional, neutro, PU 40",
+      "evitar": "—"
+    },
+    {
+      "material": "Galvanizado, aluzinco, galvalume",
+      "cuidado": "Chapa de calha, rufo e telha. Ácido oxida.",
+      "indicar": "Aluzinco, PU Calhas, Veda Calhas, PU Flex",
+      "evitar": "Acético"
+    },
+    {
+      "material": "Ferro / aço",
+      "cuidado": "Oxida (enferruja).",
+      "indicar": "PU 40 Profissional, Poliuretano (carroceria), neutro",
+      "evitar": "Acético"
+    },
+    {
+      "material": "Concreto, alvenaria, reboco",
+      "cuidado": "Poroso e alcalino.",
+      "indicar": "PU 40, neutro, Sela Trincas, PU 44, Chumbador",
+      "evitar": "Acético"
+    },
+    {
+      "material": "Madeira, MDF",
+      "cuidado": "Poroso. Para unir peças use cola.",
+      "indicar": "Cola Madeira, Cola Branca Extra, PU 40, neutro",
+      "evitar": "Acético"
+    },
+    {
+      "material": "Cerâmica, azulejo, louça",
+      "cuidado": "Não poroso; área úmida pede antifungo.",
+      "indicar": "Acético Uso Geral, Híbrido Clear 24h, Fixa Cubas",
+      "evitar": "—"
+    },
+    {
+      "material": "Pedra, mármore, granito",
+      "cuidado": "Pode manchar com produto errado.",
+      "indicar": "High Tack Ultra, PU 40 Multiuso",
+      "evitar": "Acético"
+    },
+    {
+      "material": "Policarbonato",
+      "cuidado": "Plástico de cobertura e domo.",
+      "indicar": "Neutro, High Tack Ultra",
+      "evitar": "Acético"
+    },
+    {
+      "material": "PVC",
+      "cuidado": "Rígido. No Fixa Tudo, lixar antes.",
+      "indicar": "High Tack, Fixa Tudo, Cola Rodapé, adesivo placas PVC",
+      "evitar": "—"
+    },
+    {
+      "material": "PE, PP, nylon, teflon",
+      "cuidado": "Baixa tensão superficial.",
+      "indicar": "Nada adere sem primer",
+      "evitar": "Todos os selantes"
+    },
+    {
+      "material": "Gesso, isopor",
+      "cuidado": "Frágil e poroso.",
+      "indicar": "Cola Rodapé, Monta e Fixa",
+      "evitar": "Solventes"
+    },
+    {
+      "material": "Superfície úmida",
+      "cuidado": "Água atrapalha quase todos.",
+      "indicar": "High Tack Ultra, Fixa Tudo (cola até debaixo d'água), Crystal Clear",
+      "evitar": "Acrílicos"
+    }
+  ],
+  "problema_solucao": [
+    {
+      "cliente_diz": "\"Minha calha está vazando\"",
+      "vender": "Aluzinco (premium) ou Veda Calhas / PU Calhas",
+      "porque": "Aluzinco é neutro: não oxida a chapa e aguenta anos de sol."
+    },
+    {
+      "cliente_diz": "\"Quero vedar o box do banheiro\"",
+      "vender": "Acético Uso Geral ou Híbrido Clear 24h",
+      "porque": "Ambos com antifungo. Clear 24h fica invisível."
+    },
+    {
+      "cliente_diz": "\"Montei um aquário\"",
+      "vender": "Acético 100% sem fungicida",
+      "porque": "Único seguro para peixes."
+    },
+    {
+      "cliente_diz": "\"Quero colar espelho na parede\"",
+      "vender": "Fixa Espelhos",
+      "porque": "Acético mancha a prata."
+    },
+    {
+      "cliente_diz": "\"Preciso colar sem furar\"",
+      "vender": "High Tack Ultra, Monta e Fixa ou ganchos adesivos",
+      "porque": "Depende do peso: até 350 kg no High Tack."
+    },
+    {
+      "cliente_diz": "\"Trinca na parede antes de pintar\"",
+      "vender": "Sela Trincas ou Tapa Tudo",
+      "porque": "Acrílicos lixáveis e pintáveis."
+    },
+    {
+      "cliente_diz": "\"Instalar porta ou janela\"",
+      "vender": "Espuma PU (Pro para porta pesada)",
+      "porque": "Molhar a parede, agitar 1 min, lata de cabeça para baixo, aplicar de baixo para cima, cortar após cerca de 2 h."
+    },
+    {
+      "cliente_diz": "\"Fixar barra ou parafuso no concreto\"",
+      "vender": "Chumbador Químico PRO",
+      "porque": "Ancoragem sem bucha, cargas médias."
+    },
+    {
+      "cliente_diz": "\"Trocar para-brisa\"",
+      "vender": "Parabrisas ou U-Flex PU 55",
+      "porque": "Unir em 5 min; carro parado por 8 h."
+    },
+    {
+      "cliente_diz": "\"Junta de piso / dilatação\"",
+      "vender": "PU 40 Profissional ou U-Flex PU 44",
+      "porque": "Elásticos, pintáveis, para movimento."
+    },
+    {
+      "cliente_diz": "\"Vedar motor, forno, chaminé\"",
+      "vender": "Acético Alta Temperatura (315 °C) ou Neutro Alta Temp.",
+      "porque": "Silicone comum não aguenta calor."
+    },
+    {
+      "cliente_diz": "\"Pintar escapamento ou churrasqueira\"",
+      "vender": "Unispray Alta Temperatura",
+      "porque": "Até 600 °C; o uso geral aguenta cerca de 80 °C."
+    },
+    {
+      "cliente_diz": "\"Parafuso travado, enferrujado\"",
+      "vender": "Uni Lub",
+      "porque": "Desengripante de bom custo."
+    },
+    {
+      "cliente_diz": "\"Carro falhando, bico sujo\"",
+      "vender": "Uni 80",
+      "porque": "Limpa TBI e injetor sem desmontar."
+    },
+    {
+      "cliente_diz": "\"Respingo de solda grudando\"",
+      "vender": "Antirrespingo (sem silicone se for pintar)",
+      "porque": "Silicone impede a tinta de ancorar."
+    },
+    {
+      "cliente_diz": "\"Não cola em nada esse plástico\"",
+      "vender": "Explique: PE/PP/nylon/teflon",
+      "porque": "Nenhum selante gruda sem primer; isso evita uma devolução."
+    },
+    {
+      "cliente_diz": "\"Sofá sujo\"",
+      "vender": "Espuma Limpa Tudo + Protetor de Tecidos",
+      "porque": "Limpa e depois impermeabiliza."
+    },
+    {
+      "cliente_diz": "\"Vaso sanitário vazando, cheiro ruim\"",
+      "vender": "Anel de Vedação",
+      "porque": "Instalação fácil com guia."
+    },
+    {
+      "cliente_diz": "\"Vazamento na rosca do cano\"",
+      "vender": "Fita Veda Rosca",
+      "porque": "PTFE, aguenta água quente."
+    },
+    {
+      "cliente_diz": "\"Cola tudo e rápido\"",
+      "vender": "Bond 007",
+      "porque": "Cola em 7 segundos."
+    }
+  ],
+  "como_aplicar": [
+    {
+      "titulo": "Regra de ouro de qualquer selante",
+      "passos": [
+        "Superfície seca, limpa, sem pó e sem óleo.",
+        "Desengordurar com álcool isopropílico. Nunca querosene ou gasolina.",
+        "Fita crepe nas laterais da junta; tirar antes de formar película.",
+        "Fazer o acabamento logo após aplicar.",
+        "Guardar com um \"tampão\" de produto no bico; usar em até 1 semana.",
+        "Depois de curado, só sai raspando."
+      ]
+    },
+    {
+      "titulo": "Espuma de PU",
+      "passos": [
+        "Molhar a parede: a espuma cura com umidade.",
+        "Agitar por 1 minuto.",
+        "Lata sempre de cabeça para baixo.",
+        "Encher só 1/3 do vão: ela expande.",
+        "Aplicar de baixo para cima.",
+        "Cortar o excesso depois de cerca de 2 h."
+      ]
+    },
+    {
+      "titulo": "Tinta spray",
+      "passos": [
+        "Agitar em movimento circular (não para cima e para baixo: a esfera danifica a válvula).",
+        "Aplicar em camadas finas, a 25–30 cm.",
+        "Ao terminar, virar de cabeça para baixo e apertar até sair só gás.",
+        "Isso limpa o bico; bico entupido parece \"lata sem gás\"."
+      ]
+    },
+    {
+      "titulo": "Chumbador Químico",
+      "passos": [
+        "Furo limpo, sem pó (soprar e escovar).",
+        "Descartar o primeiro produto até a cor ficar uniforme.",
+        "Encher o furo de baixo para cima e inserir a barra girando.",
+        "Não mexer até curar (cerca de 20 min)."
+      ]
+    },
+    {
+      "titulo": "Acrílicos (Veda Calhas, Sela Trincas)",
+      "passos": [
+        "Aplicar em tempo bom: secam com calor.",
+        "Chuva logo após lava o produto.",
+        "24 h para secar e endurecer.",
+        "Podem receber tinta base água."
+      ]
+    },
+    {
+      "titulo": "Para-brisa (Parabrisas)",
+      "passos": [
+        "Cortar o bico em \"V\".",
+        "Unir o vidro em até 5 minutos.",
+        "Pressionar leve e uniforme na borda toda.",
+        "Esperar 8 h antes de movimentar o carro."
+      ]
+    },
+    {
+      "titulo": "Fixação adesiva",
+      "passos": [
+        "Limpar com álcool e secar.",
+        "Pressionar firme por alguns segundos.",
+        "Gancho: esperar 1 h antes de pendurar peso.",
+        "Respeitar o peso da embalagem."
+      ]
+    },
+    {
+      "titulo": "Silicone Clear 24h e híbridos",
+      "passos": [
+        "Clear sai branco e fica incolor em 24 h.",
+        "Sem água no período de cura.",
+        "Híbridos aceitam tinta; fazer pré-teste."
+      ]
+    }
+  ],
+  "segmentos": [
+    {
+      "segmento": "Material de construção / home center",
+      "mix": "PU 40 (todos), acéticos, neutros, espumas PU, Sela Trincas, Tapa Tudo, Chumbador, Cola Rodapé, fitas, veda rosca, anel de vedação."
+    },
+    {
+      "segmento": "Ferragens",
+      "mix": "Acético, PU 40 Multiuso, Fixa Tudo, Bond 007, Uni Lub, fita isolante e silver tape, ganchos, veda rosca, gás maçarico."
+    },
+    {
+      "segmento": "Vidraçarias e esquadrias",
+      "mix": "Acético Profissional, neutro, Fixa Espelhos, Crystal Clear, PU 40 Multiuso, U-Flex PU 55 (sacada)."
+    },
+    {
+      "segmento": "Calheiros e telhados",
+      "mix": "Aluzinco, PU Calhas, Veda Calhas, PU Flex, espuma PU."
+    },
+    {
+      "segmento": "Marcenarias e móveis",
+      "mix": "Cola Branca Extra (balde), Cola Madeira, Fixa Espelhos, High Tack, feltro e anti-impacto, Bond 007."
+    },
+    {
+      "segmento": "Autopeças, oficinas, autovidros",
+      "mix": "Acético Alta Temperatura, Uni 80, Uni Lub, limpa contato, grafite, graxas, Parabrisas, PU 55, PU 40 Profissional (carroceria), Espuma Limpa Tudo."
+    },
+    {
+      "segmento": "Tintas e revestimentos",
+      "mix": "Unispray (todas as linhas), corantes, Sela Trincas, Tapa Tudo, fita crepe, adesivo piso vinílico, Cola Rodapé."
+    },
+    {
+      "segmento": "Serralherias e metalúrgicas",
+      "mix": "Antirrespingo de solda, PU 40 Profissional, Poliuretano, Chumbador, Epóxi PRO, tinta alta temperatura."
+    },
+    {
+      "segmento": "Supermercados, conveniência, bazar",
+      "mix": "Bond 007 (cartela), Easy Pack sem cheiro, ganchos e suportes, odorizador, Espuma Limpa Tudo, Protetor de Tecidos, fita empacotamento, gás maçarico."
+    },
+    {
+      "segmento": "Elétrica e refrigeração",
+      "mix": "Fita isolante, limpa contato, Limpa Ar-condicionado, Aluzinco (dutos), espuma PU Multiuso."
+    },
+    {
+      "segmento": "Pet shop e aquarismo",
+      "mix": "Acético 100% sem fungicida."
+    },
+    {
+      "segmento": "Papelarias",
+      "mix": "Cola Branca Original, Bond 007, fitas."
+    }
+  ],
+  "objecoes": [
+    {
+      "objecao": "\"Já trabalho com outra marca.\"",
+      "resposta": "Ótimo, não precisa trocar tudo. Comece com 3 itens onde a Unipega é forte (PU 40, Bond, Uni Lub) e compare o giro. Somos Top of Mind há 4 anos."
+    },
+    {
+      "objecao": "\"Seu neutro é mais caro que o acético.\"",
+      "resposta": "É outra química: ele vai em concreto, madeira e metal sem oxidar. Vender o acético errado gera devolução e cliente bravo."
+    },
+    {
+      "objecao": "\"Não gira na minha loja.\"",
+      "resposta": "Vamos começar pelos campeões de giro e com exposição no caixa (Bond em cartela, ganchos). Eu volto em 15 dias para ver."
+    },
+    {
+      "objecao": "\"Meu cliente reclamou que descolou.\"",
+      "resposta": "Qual material? Se for PP/PE, nenhuma marca cola. Se foi aplicado em superfície suja, eu ensino o passo a passo. Posso mandar o vídeo."
+    },
+    {
+      "objecao": "\"Tenho estoque cheio.\"",
+      "resposta": "Sem problema. Deixo o catálogo e os vídeos; me chama quando girar. Posso começar só com um lançamento (Aluzinco, Gás Maçarico, Anel de Vedação)."
+    }
+  ],
+  "mensagens_whatsapp": [
+    "Olá! Sou o Heitor, da Maper, representante Unipega aqui na região. A Unipega é Top of Mind há 4 anos em silicones e selantes PU. Posso te mandar o catálogo e uns vídeos rápidos dos produtos que mais giram?",
+    "Bom dia! Vi que vocês trabalham com calhas e telhados. A Unipega lançou o Aluzinco, um silicone neutro feito para calha: não oxida a chapa e aguenta muito mais sol que PU comum. Segue o vídeo. Quer que eu passe aí para mostrar?",
+    "Oi! Passando para lembrar do nosso reabastecimento. Como girou o PU 40 e o Bond 007? Essa semana tenho condição para o Uni Lub e a espuma PU. Unipega pega bem!"
+  ],
+  "glossario": [
+    {
+      "termo": "Acético",
+      "definicao": "Silicone que cura soltando ácido acético (cheiro de vinagre)."
+    },
+    {
+      "termo": "Neutro / oxima",
+      "definicao": "Silicone de cura neutra, não ataca metais nem superfícies sensíveis."
+    },
+    {
+      "termo": "Híbrido / MS polímero",
+      "definicao": "Polímero com silanos modificados: cola e veda quase tudo e aceita tinta."
+    },
+    {
+      "termo": "PU (poliuretano)",
+      "definicao": "Família de selantes e espumas; \"PU 40\" virou nome genérico de selante híbrido."
+    },
+    {
+      "termo": "Monocomponente",
+      "definicao": "Vem pronto, num tubo só."
+    },
+    {
+      "termo": "Bicomponente",
+      "definicao": "Dois componentes que precisam ser misturados (epóxi, chumbador)."
+    },
+    {
+      "termo": "Cura",
+      "definicao": "Processo do produto virar borracha ou sólido."
+    },
+    {
+      "termo": "Película",
+      "definicao": "Pele que se forma na superfície no início da cura."
+    },
+    {
+      "termo": "Tixotrópico",
+      "definicao": "Não escorre em parede ou teto."
+    },
+    {
+      "termo": "Não escorrimento",
+      "definicao": "Mesma ideia: o cordão fica onde foi aplicado."
+    },
+    {
+      "termo": "Substrato",
+      "definicao": "A superfície onde se aplica o produto."
+    },
+    {
+      "termo": "Primer",
+      "definicao": "Promotor de adesão aplicado antes, em superfícies difíceis."
+    },
+    {
+      "termo": "Shore A",
+      "definicao": "Escala de dureza da borracha curada."
+    },
+    {
+      "termo": "Alongamento",
+      "definicao": "Quanto o produto estica antes de romper (%)."
+    },
+    {
+      "termo": "Tensão de ruptura",
+      "definicao": "Força que o produto curado aguenta antes de romper (MPa)."
+    },
+    {
+      "termo": "Junta de movimentação",
+      "definicao": "Junta feita para dilatar e contrair."
+    },
+    {
+      "termo": "Calafetar",
+      "definicao": "Preencher e vedar frestas."
+    },
+    {
+      "termo": "Intemperismo",
+      "definicao": "Desgaste por sol, chuva, frio e calor."
+    },
+    {
+      "termo": "UV+",
+      "definicao": "Proteção extra contra raios ultravioleta."
+    },
+    {
+      "termo": "Fungicida / antifungo",
+      "definicao": "Aditivo que impede mofo."
+    },
+    {
+      "termo": "Tack",
+      "definicao": "Agarre inicial do adesivo."
+    },
+    {
+      "termo": "Galvalume / aluzinco",
+      "definicao": "Aço com revestimento de alumínio e zinco, usado em telhas e calhas."
+    },
+    {
+      "termo": "Rufo / pingadeira",
+      "definicao": "Peças metálicas que desviam a água em telhados e muros."
+    },
+    {
+      "termo": "Esquadria",
+      "definicao": "Estrutura de portas e janelas (alumínio, madeira, PVC)."
+    },
+    {
+      "termo": "Cartucho",
+      "definicao": "Tubo rígido usado com pistola aplicadora (260–400 mL)."
+    },
+    {
+      "termo": "Sachê",
+      "definicao": "Embalagem flexível para pistola profissional (600–800 mL)."
+    },
+    {
+      "termo": "Bisnaga / Easy Pack",
+      "definicao": "Tubo que dispensa pistola; Easy Pack = bisnagão de 150 mL."
+    },
+    {
+      "termo": "Blister",
+      "definicao": "Embalagem de vitrine, para pendurar na gancheira."
+    },
+    {
+      "termo": "Giro",
+      "definicao": "Velocidade com que o produto vende na loja."
+    },
+    {
+      "termo": "Mix",
+      "definicao": "Conjunto de produtos que a loja trabalha."
+    },
+    {
+      "termo": "TBI",
+      "definicao": "Corpo de borboleta da injeção eletrônica (limpo com Uni 80)."
+    },
+    {
+      "termo": "PTFE",
+      "definicao": "Teflon: material da fita veda rosca e um dos plásticos onde nada cola."
+    }
+  ],
+  "quiz": [
+    {
+      "pergunta": "Cliente quer vedar um aquário. O que vender?",
+      "opcoes": [
+        "Acético Uso Geral",
+        "Acético 100% sem fungicida",
+        "PU 40 Multiuso"
+      ],
+      "correta": 1,
+      "explicacao": "Fungicida mata os peixes; só o \"sem fungicida\" serve."
+    },
+    {
+      "pergunta": "Por que não indicar acético em calha galvanizada?",
+      "opcoes": [
+        "Porque o ácido oxida o metal",
+        "Porque é caro",
+        "Porque não é transparente"
+      ],
+      "correta": 0,
+      "explicacao": "Use Aluzinco, PU Calhas ou Veda Calhas."
+    },
+    {
+      "pergunta": "Qual plástico NENHUM selante cola sem primer?",
+      "opcoes": [
+        "PVC",
+        "Policarbonato",
+        "Polipropileno (PP)"
+      ],
+      "correta": 2,
+      "explicacao": "PE, PP, nylon e teflon têm baixa tensão superficial."
+    },
+    {
+      "pergunta": "Veda Calhas é de que química?",
+      "opcoes": [
+        "Silicone neutro",
+        "Acrílico base água",
+        "Poliuretano"
+      ],
+      "correta": 1,
+      "explicacao": "Por isso precisa de tempo bom: chuva lava antes de secar."
+    },
+    {
+      "pergunta": "O PU 40 Multiuso pode ir em junta de movimentação?",
+      "opcoes": [
+        "Sim",
+        "Não, o boletim proíbe"
+      ],
+      "correta": 1,
+      "explicacao": "Para movimento: PU 40 Profissional, Híbrido Construção ou PU 44."
+    },
+    {
+      "pergunta": "Cliente quer colar espelho. Indique:",
+      "opcoes": [
+        "Acético",
+        "Fixa Espelhos",
+        "Bond 007"
+      ],
+      "correta": 1,
+      "explicacao": "Acético mancha a prata do espelho."
+    },
+    {
+      "pergunta": "Quanto tempo esperar para mover o carro após colar o para-brisa?",
+      "opcoes": [
+        "30 minutos",
+        "8 horas",
+        "3 dias"
+      ],
+      "correta": 1,
+      "explicacao": "Unir o vidro em até 5 min e esperar 8 h."
+    },
+    {
+      "pergunta": "A tinta spray uso geral aguenta escapamento?",
+      "opcoes": [
+        "Sim",
+        "Não, só até cerca de 80 °C"
+      ],
+      "correta": 1,
+      "explicacao": "Para calor use a Alta Temperatura (600 °C)."
+    },
+    {
+      "pergunta": "Antirrespingo para peça que vai ser pintada:",
+      "opcoes": [
+        "Com silicone",
+        "Sem silicone"
+      ],
+      "correta": 1,
+      "explicacao": "Silicone impede a tinta de ancorar."
+    },
+    {
+      "pergunta": "Qual destes é um argumento de marca verdadeiro?",
+      "opcoes": [
+        "Top of Mind 4 anos seguidos",
+        "Único fabricante do Brasil",
+        "Garantia vitalícia"
+      ],
+      "correta": 0,
+      "explicacao": "Revista Revenda, 2025."
+    }
+  ],
+  "marca": {
+    "top_of_mind": "Top of Mind Revista Revenda, 4º ano consecutivo (2025): 2º Silicones, 2º Selante PU, 2º Óleo desengripante, 3º Cola instantânea.",
+    "empresa": "Unipega é a marca oficial da A&S Technologies (Grupo OCQ); mais de 400 produtos; presente na América Latina.",
+    "slogan": "Unipega pega bem",
+    "segmentos_catalogo": [
+      "construção",
+      "marcenaria",
+      "automotivo",
+      "comércio e consumo massivo",
+      "pintura e revestimentos"
+    ]
+  },
+  "regras_tecnicas_gerais": [
+    "Silicone, PU e acrílico NÃO aderem em PE, PP, nylon e teflon (baixa tensão superficial) — precisa primer. Vale para todas as marcas.",
+    "Acético: não usar em concreto, metais oxidáveis, espelho, vidro laminado, policarbonato, superfície pintada, aquário.",
+    "Só o Acético 100% sem fungicida vai em aquário.",
+    "Silicones (acético, neutro, Aluzinco) não aceitam pintura; híbridos e acrílicos aceitam.",
+    "Acrílicos secam por evaporação: aplicar em tempo bom, chuva lava antes de secar.",
+    "PU 40 Multiuso e PU Calhas/Flex: não usar em junta de movimentação nem fachada (boletim).",
+    "Preparo: superfície seca, limpa, sem pó/óleo; desengordurar com álcool isopropílico; nunca querosene/gasolina; fita crepe nas laterais.",
+    "Armazenar 5–30 °C; validade 12 meses; aberto, usar em até 1 semana (deixar tampão no bico)."
+  ]
+}

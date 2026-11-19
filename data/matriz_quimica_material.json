@@ -1,0 +1,108 @@
+{
+  "materiais": [
+    "Vidro",
+    "Alumínio",
+    "Cerâmica/azulejo",
+    "Concreto/alvenaria",
+    "Madeira",
+    "Galvanizado/aluzinco",
+    "Espelho",
+    "Policarbonato",
+    "Aquário",
+    "PE/PP/nylon/teflon"
+  ],
+  "legenda": {
+    "2": "funciona",
+    "1": "depende / testar",
+    "0": "não usar"
+  },
+  "quimicas": [
+    {
+      "quimica": "Silicone acético",
+      "valores": [
+        2,
+        2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "quimica": "Silicone neutro",
+      "valores": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "quimica": "Acrílico base água",
+      "valores": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "quimica": "Híbrido (PU 40, Fixa Tudo)",
+      "valores": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "quimica": "Acético 100% sem fungicida",
+      "valores": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    }
+  ],
+  "dica_por_material": {
+    "Vidro": "Vidro: acético (box, vidraçaria), neutro, híbrido. Vidro de para-brisa = <b>Parabrisas</b> ou <b>U-Flex PU 55</b>. Vidro laminado: nada de acético.",
+    "Alumínio": "Alumínio: acético é o clássico de esquadria. Neutro e PU 40 também. Calha/telhado: <b>Aluzinco</b>.",
+    "Cerâmica/azulejo": "Cerâmica, azulejo, louça: <b>Acético Uso Geral</b> (tem antifungo, ideal em banheiro). Cuba: <b>Fixa Cubas</b>.",
+    "Concreto/alvenaria": "Concreto e alvenaria são porosos e alcalinos: acético NÃO. Use <b>PU 40</b>, <b>neutro</b>, <b>Sela Trincas</b> ou <b>PU 44</b> em junta de piso.",
+    "Madeira": "Madeira é porosa: <b>PU 40</b>, <b>neutro</b>, acrílicos. Para colar madeira com madeira: <b>Cola Madeira</b> ou <b>Cola Branca Extra</b>.",
+    "Galvanizado/aluzinco": "Chapa galvanizada, aluzinco, galvalume: acético oxida o metal. Use <b>Aluzinco</b> (melhor contra sol), <b>PU Calhas</b> ou <b>Veda Calhas</b>.",
+    "Espelho": "Espelho: acético mancha a prata do espelho. Use <b>Fixa Espelhos</b>, feito para não manchar.",
+    "Policarbonato": "Policarbonato: acético ataca. Use <b>neutro</b> ou <b>High Tack Ultra</b> (o boletim lista policarbonato).",
+    "Aquário": "Aquário, terrário, câmara fria: <b>somente Acético 100% sem fungicida</b>. Fungicida mata peixe; todos os outros boletins proíbem aquário.",
+    "PE/PP/nylon/teflon": "PE, PP, nylon e teflon têm baixa tensão superficial: <b>nenhum</b> silicone, PU ou acrílico gruda, de nenhuma marca. Precisa de primer."
+  }
+}
