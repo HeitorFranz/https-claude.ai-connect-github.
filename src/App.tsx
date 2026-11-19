@@ -5,6 +5,8 @@ import Layout from './components/Layout'
 import Login from './pages/Login'
 import Inicio from './pages/Inicio'
 import EmBreve from './pages/EmBreve'
+import Conhecimento from './pages/conhecimento'
+import Produto from './pages/Produto'
 
 export default function App() {
   return (
@@ -15,9 +17,9 @@ export default function App() {
           <Route element={<RequireAuth />}>
             <Route element={<Layout />}>
               <Route index element={<Inicio />} />
-              <Route path="conhecimento/*" element={<EmBreve titulo="Conhecimento" />} />
+              <Route path="conhecimento/*" element={<Conhecimento />} />
               <Route path="consulta" element={<EmBreve titulo="Consulta" />} />
-              <Route path="produto/:id" element={<EmBreve titulo="Produto" />} />
+              <Route path="produto/:id" element={<Produto />} />
               <Route path="*" element={<EmBreve titulo="Página não encontrada" />} />
             </Route>
           </Route>

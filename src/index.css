@@ -43,8 +43,10 @@
   --color-mid: var(--mid);
 }
 
-html, body { overflow-x: clip; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 "Schibsted Grotesk", system-ui, sans-serif; }
-h1, h2, h3 { font-weight: 800; line-height: 1.08; letter-spacing: -0.02em; text-wrap: balance; }
-a { color: var(--red); }
-:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+@layer base {
+  html, body { overflow-x: clip; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 "Schibsted Grotesk", system-ui, sans-serif; }
+  h1, h2, h3 { font-weight: 800; line-height: 1.08; letter-spacing: -0.02em; text-wrap: balance; }
+  a { color: var(--red); }
+  :focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+}

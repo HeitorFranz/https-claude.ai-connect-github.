@@ -10,7 +10,7 @@ const abas = [
 export default function Layout() {
   const { sair } = useAuth()
   return (
-    <div className="min-h-dvh flex flex-col">
+    <div className="min-h-dvh flex flex-col overflow-x-clip">
       <header className="bg-red text-white">
         <div className="max-w-5xl mx-auto px-4 h-14 flex items-center gap-3">
           <Link to="/" className="text-white no-underline font-extrabold text-lg tracking-tight">Consulta UNIPEGA</Link>
@@ -18,7 +18,7 @@ export default function Layout() {
           <button onClick={sair} className="ml-auto text-sm font-medium px-3 h-9 rounded-full border border-white/50">Sair</button>
         </div>
       </header>
-      <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-6 pb-24">
+      <main className="flex-1 min-w-0 w-full max-w-5xl mx-auto px-4 py-6 pb-24">
         <Outlet />
       </main>
       <nav className="fixed bottom-0 inset-x-0 bg-panel border-t border-line">

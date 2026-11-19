@@ -1,0 +1,15 @@
+export const secoes = [
+  { slug: 'mapa', titulo: 'Mapa química × material', desc: 'Qual química funciona em cada superfície.' },
+  { slug: 'conceitos', titulo: 'Conceitos', desc: 'Selante, adesivo, cura, película e mais.' },
+  { slug: 'quimicas', titulo: 'As químicas', desc: 'Acético, neutro, acrílico, híbrido, PU…' },
+  { slug: 'materiais', titulo: 'Materiais e substratos', desc: 'Cuidados, o que indicar e o que evitar.' },
+  { slug: 'produtos', titulo: 'Produtos', desc: 'Os 55 produtos, com busca e filtro.' },
+  { slug: 'problemas', titulo: 'Problema → solução', desc: 'O que o cliente diz e o que vender.' },
+  { slug: 'aplicar', titulo: 'Como aplicar', desc: 'Passo a passo de aplicação.' },
+  { slug: 'segmentos', titulo: 'Clientes e segmentos', desc: 'O mix certo para cada tipo de loja.' },
+  { slug: 'vender', titulo: 'Como vender', desc: 'Passos, argumentos, objeções e WhatsApp.' },
+  { slug: 'regras', titulo: 'Regras de ouro', desc: 'Regras técnicas que valem sempre.' },
+  { slug: 'glossario', titulo: 'Glossário', desc: 'Termos técnicos explicados.' },
+  { slug: 'biblioteca', titulo: 'Biblioteca do Drive', desc: 'Vídeos, treinamentos, boletins e artes.' },
+  { slug: 'quiz', titulo: 'Quiz', desc: 'Teste o que você aprendeu.' },
+] as const

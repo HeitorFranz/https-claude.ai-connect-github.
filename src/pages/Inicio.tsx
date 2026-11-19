@@ -19,7 +19,7 @@ export default function Inicio() {
 
       <form onSubmit={buscar} role="search" className="flex gap-2">
         <input value={busca} onChange={(e) => setBusca(e.target.value)} placeholder="O que o cliente pediu?"
-          aria-label="Busca rápida" className="flex-1 h-12 px-3 rounded-lg border border-line bg-panel text-base" />
+          aria-label="Busca rápida" className="flex-1 min-w-0 h-12 px-3 rounded-lg border border-line bg-panel text-base" />
         <button className="h-12 px-4 rounded-lg bg-red text-white font-bold">Consultar</button>
       </form>
 
