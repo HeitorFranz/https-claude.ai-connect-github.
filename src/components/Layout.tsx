@@ -1,11 +1,12 @@
 import { Link, NavLink, Outlet } from 'react-router-dom'
-import { BookOpen, LogOut, Package, Search } from 'lucide-react'
+import { BookOpen, LogOut, Package, Search, Users } from 'lucide-react'
 import { useAuth } from '../auth/AuthProvider'
 
 const abas = [
   { to: '/consulta', label: 'Consultar', Icone: Search },
   { to: '/produtos', label: 'Produtos', Icone: Package },
-  { to: '/guia', label: 'Guia técnico', Icone: BookOpen },
+  { to: '/clientes', label: 'Clientes', Icone: Users },
+  { to: '/guia', label: 'Guia', Icone: BookOpen },
 ]
 
 function Marca() {
@@ -40,10 +41,10 @@ export default function Layout() {
             <LogOut size={18} aria-hidden /><span className="hidden sm:inline">Sair</span>
           </button>
         </div>
-        <nav aria-label="Principal" className="sm:hidden grid grid-cols-3 border-t border-white/10">
+        <nav aria-label="Principal" className="sm:hidden grid grid-cols-4 border-t border-white/10">
           {abas.map(({ to, label, Icone }) => (
             <NavLink key={to} to={to}
-              className={({ isActive }) => `relative h-12 flex items-center justify-center gap-1.5 no-underline text-[13px] font-bold ${isActive ? 'text-white after:absolute after:inset-x-4 after:bottom-0 after:h-[3px] after:rounded-t after:bg-red' : 'text-bar-ink/60'}`}>
+              className={({ isActive }) => `relative h-13 flex flex-col items-center justify-center gap-0.5 no-underline text-[12px] font-bold ${isActive ? 'text-white after:absolute after:inset-x-3 after:bottom-0 after:h-[3px] after:rounded-t after:bg-red' : 'text-bar-ink/60'}`}>
               <Icone size={16} aria-hidden />{label}
             </NavLink>
           ))}

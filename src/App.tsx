@@ -6,6 +6,8 @@ import Login from './pages/Login'
 import Inicio from './pages/Inicio'
 import { AreaGuia, AreaProdutos } from './pages/produtos'
 import Consulta from './pages/consulta/Consulta'
+import Clientes from './pages/clientes/Clientes'
+import ClienteForm from './pages/clientes/ClienteForm'
 
 export default function App() {
   return (
@@ -19,6 +21,9 @@ export default function App() {
               <Route path="consulta" element={<Consulta />} />
               <Route path="produtos/*" element={<AreaProdutos />} />
               <Route path="guia/*" element={<AreaGuia />} />
+              <Route path="clientes" element={<Clientes />} />
+              <Route path="clientes/novo" element={<ClienteForm />} />
+              <Route path="clientes/:id" element={<ClienteForm />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
           </Route>
