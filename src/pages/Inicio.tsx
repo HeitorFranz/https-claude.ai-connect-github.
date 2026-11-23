@@ -12,10 +12,10 @@ export default function Inicio() {
   const enviar = (e: FormEvent) => { e.preventDefault(); consultar(texto) }
 
   return (
-    <div className="grid grid-cols-[minmax(0,1fr)] gap-5 max-w-3xl mx-auto">
-      <section className="bg-bar text-bar-ink rounded-2xl p-5 sm:p-7 grid gap-4">
+    <div className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] gap-[clamp(1rem,2vw,1.5rem)] items-stretch">
+      <section className="bg-bar text-bar-ink rounded-2xl p-[clamp(1.25rem,3vw,2.25rem)] grid gap-4 content-center">
         <div className="grid gap-1.5">
-          <h1 className="text-[28px] sm:text-[36px] text-white">O que o cliente precisa?</h1>
+          <h1 className="t-hero text-white">O que o cliente precisa?</h1>
           <p className="m-0 text-bar-ink/70">Escreva o pedido como ele falou. O app indica o produto e mostra o que não usar.</p>
         </div>
         <form onSubmit={enviar} role="search" className="flex gap-2">
@@ -34,7 +34,7 @@ export default function Inicio() {
         </div>
       </section>
 
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1 content-stretch">
         <Link to="/produtos" className="no-underline text-ink bg-panel border border-line rounded-2xl p-5 grid gap-3 hover:border-ink transition-colors duration-150">
           <span className="flex items-center gap-3">
             <span className="w-11 h-11 rounded-xl bg-bg grid place-items-center"><Package size={22} aria-hidden /></span>

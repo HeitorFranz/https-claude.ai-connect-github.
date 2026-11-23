@@ -25,7 +25,7 @@ export default function Layout() {
   return (
     <div className="min-h-dvh flex flex-col overflow-x-clip">
       <header className="bg-bar text-bar-ink sticky top-0 z-20 shadow-[0_1px_0_rgba(255,255,255,0.06)]">
-        <div className="max-w-5xl mx-auto px-4 h-14 flex items-center gap-6">
+        <div className="pagina h-14 flex items-center gap-[clamp(1rem,3vw,2.5rem)]">
           <Marca />
           <nav aria-label="Principal" className="hidden sm:flex h-full items-stretch gap-1">
             {abas.map(({ to, label, Icone }) => (
@@ -49,7 +49,7 @@ export default function Layout() {
           ))}
         </nav>
       </header>
-      <main className="flex-1 min-w-0 w-full max-w-5xl mx-auto px-4 pt-6 pb-16">
+      <main className="flex-1 min-w-0 pagina pt-[clamp(1.25rem,3vw,2.5rem)] pb-16">
         <Outlet />
       </main>
     </div>

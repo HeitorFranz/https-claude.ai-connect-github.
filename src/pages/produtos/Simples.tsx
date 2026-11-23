@@ -6,7 +6,7 @@ export function Conceitos() {
   return (
     <div>
       <Titulo voltar="/guia">Conceitos</Titulo>
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(min(100%,20rem),1fr))]">
         {conhecimento.conceitos.map((c) => (
           <Cartao key={c.titulo}><h2 className="text-lg mb-1">{c.titulo}</h2><Html html={c.texto_html} /></Cartao>
         ))}
@@ -19,7 +19,7 @@ export function Quimicas() {
   return (
     <div>
       <Titulo voltar="/guia">As químicas</Titulo>
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(min(100%,20rem),1fr))]">
         {conhecimento.quimicas.map((q) => (
           <div key={q.nome} className="bg-panel border border-line border-l-8 rounded-xl p-4" style={{ borderLeftColor: q.cor }}>
             <div className="grid gap-2">
@@ -59,7 +59,7 @@ export function Problemas() {
   return (
     <div>
       <Titulo voltar="/guia" sub="O problema que aparece na obra e o produto que resolve.">Problemas e soluções</Titulo>
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(min(100%,20rem),1fr))]">
         {conhecimento.problema_solucao.map((p) => (
           <Cartao key={p.cliente_diz}>
             <p className="m-0 font-bold text-lg">{p.cliente_diz}</p>
@@ -76,7 +76,7 @@ export function Aplicar() {
   return (
     <div>
       <Titulo voltar="/guia">Como aplicar</Titulo>
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(min(100%,20rem),1fr))]">
         {conhecimento.como_aplicar.map((c) => (
           <Cartao key={c.titulo}>
             <h2 className="text-lg mb-2">{c.titulo}</h2>

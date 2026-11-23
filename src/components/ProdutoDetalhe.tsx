@@ -72,16 +72,16 @@ export function CabecalhoProduto({ p, nivel = 1 }: { p: Produto; nivel?: 1 | 2 }
   const nums = destaques(b)
   const H = nivel === 1 ? 'h1' : 'h2'
   return (
-    <header className="bg-panel border border-line rounded-2xl overflow-hidden">
+    <header className="@container bg-panel border border-line rounded-2xl overflow-hidden">
       <div className="h-1.5" style={{ background: cor(p.familia) }} aria-hidden />
       <div className="p-5 grid gap-3">
         <p className="m-0 text-sm font-bold flex items-center gap-2" style={{ color: cor(p.familia) }}>
           <span className="w-2.5 h-2.5 rounded-full" style={{ background: cor(p.familia) }} aria-hidden />{p.familia}
         </p>
-        <H className="text-[26px] sm:text-[32px]">{p.nome}</H>
+        <H className="t-produto">{p.nome}</H>
         <p className="m-0 text-mute max-w-[62ch]">{p.o_que_e}</p>
         {nums.length > 0 && (
-          <dl className="m-0 grid grid-cols-2 sm:grid-cols-4 gap-px bg-line border border-line rounded-xl overflow-hidden">
+          <dl className="m-0 grid grid-cols-2 @lg:grid-cols-4 gap-px bg-line border border-line rounded-xl overflow-hidden">
             {nums.map((n) => (
               <div key={n.rotulo} className="bg-bg px-3 py-2.5">
                 <dt className="text-xs text-mute">{n.rotulo}</dt>
@@ -120,7 +120,7 @@ export default function ProdutoDetalhe({ p }: { p: Produto }) {
   ]
 
   return (
-    <div className="grid grid-cols-[minmax(0,1fr)] gap-4">
+    <div className="grid grid-cols-[minmax(0,1fr)] gap-4 content-start">
       <div role="tablist" aria-label="Informações do produto" className="grid grid-cols-4 gap-1 p-1 bg-panel border border-line rounded-xl">
         {abas.map((x) => (
           <button key={x.id} role="tab" type="button" aria-selected={aba === x.id} onClick={() => setAba(x.id)}
@@ -139,18 +139,18 @@ export default function ProdutoDetalhe({ p }: { p: Produto }) {
         </label>
       )}
 
-      <div role="tabpanel" className="bg-panel border border-line rounded-2xl p-5 grid gap-6">
+      <div role="tabpanel" className="@container bg-panel border border-line rounded-2xl p-[clamp(1rem,2.5vw,1.75rem)] grid gap-6">
         {aba === 'geral' && (
           <>
             {aviso && (
               <p className="m-0 bg-yelbg border-l-4 border-yel rounded-lg p-3 flex gap-2 text-sm"><AlertTriangle size={18} className="shrink-0 mt-0.5 text-mid" aria-hidden />{aviso}</p>
             )}
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="bg-okbg rounded-xl p-4 grid gap-1.5">
+            <div className="grid gap-4 @xl:grid-cols-2">
+              <div className="bg-okbg rounded-xl p-4 grid gap-1.5 content-start">
                 <h3 className="text-[17px] text-ok flex items-center gap-2"><CheckCircle2 size={19} aria-hidden />Onde usar</h3>
                 <p className="m-0">{p.usar_em}</p>
               </div>
-              <div className="bg-redbg rounded-xl p-4 grid gap-1.5">
+              <div className="bg-redbg rounded-xl p-4 grid gap-1.5 content-start">
                 <h3 className="text-[17px] text-no flex items-center gap-2"><Ban size={19} aria-hidden />Não use</h3>
                 <p className="m-0">{vazio(p.nao_usar) ? (b?.limitacoes ? 'Veja as limitações na aba Técnico.' : 'Sem restrições informadas.') : p.nao_usar}</p>
               </div>

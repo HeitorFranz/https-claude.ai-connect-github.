@@ -10,8 +10,10 @@ export default function Produto() {
   return (
     <div className="grid grid-cols-[minmax(0,1fr)] gap-4">
       <Voltar para="/produtos" rotulo="Todos os produtos" />
-      <CabecalhoProduto p={p} />
-      <ProdutoDetalhe key={p.id} p={p} />
+      <div className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] gap-[clamp(1rem,2vw,1.5rem)] items-start">
+        <div className="lg:sticky lg:top-20"><CabecalhoProduto p={p} /></div>
+        <ProdutoDetalhe key={p.id} p={p} />
+      </div>
     </div>
   )
 }

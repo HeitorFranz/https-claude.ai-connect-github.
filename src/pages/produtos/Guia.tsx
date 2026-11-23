@@ -13,8 +13,9 @@ export default function Guia() {
   return (
     <div className="grid grid-cols-[minmax(0,1fr)] gap-6">
       <Titulo sub="O conhecimento técnico que vale para todos os produtos.">Guia técnico</Titulo>
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,20rem),1fr))] gap-x-6 gap-y-5 items-start -mt-2">
       {grupos.map((g) => (
-        <section key={g.nome} className="grid gap-2 -mt-2">
+        <section key={g.nome} className="grid gap-2">
           <h2 className="text-lg">{g.nome}</h2>
           <ul className="list-none p-0 m-0 bg-panel border border-line rounded-2xl divide-y divide-line overflow-hidden">
             {g.slugs.map((slug) => {
@@ -35,6 +36,7 @@ export default function Guia() {
           </ul>
         </section>
       ))}
+      </div>
     </div>
   )
 }

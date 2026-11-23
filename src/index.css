@@ -54,7 +54,13 @@
   --color-mid: var(--mid);
 }
 
+@utility t-titulo { font-size: clamp(1.7rem, 1.35rem + 1.6vw, 2.4rem); }
+@utility t-produto { font-size: clamp(1.6rem, 1.25rem + 1.8vw, 2.5rem); }
+@utility t-hero { font-size: clamp(1.75rem, 1.3rem + 2vw, 2.6rem); }
+@utility pagina { width: 100%; max-width: 76rem; margin-inline: auto; padding-inline: clamp(1rem, 0.5rem + 2.5vw, 2.5rem); }
+
 @layer base {
+  html { font-size: clamp(15px, 14px + 0.25vw, 17px); }
   html, body { overflow-x: clip; }
   body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 "Schibsted Grotesk", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
   h1, h2, h3, h4 { font-weight: 800; line-height: 1.1; letter-spacing: -0.015em; text-wrap: balance; margin: 0; }

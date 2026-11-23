@@ -66,7 +66,7 @@ export default function Consulta() {
   return (
     <div className="grid grid-cols-[minmax(0,1fr)] gap-5">
       <div className="grid gap-1.5">
-        <h1 className="text-[28px] sm:text-[34px]">Consultar</h1>
+        <h1 className="t-titulo">Consultar</h1>
         <p className="text-mute m-0">Digite o nome do produto ou descreva o que o cliente precisa.</p>
       </div>
 
@@ -141,7 +141,7 @@ export default function Consulta() {
       )}
 
       {resultados.length > 0 && (
-        <section aria-label="Produtos indicados" className="grid gap-3 sm:grid-cols-3">
+        <section aria-label="Produtos indicados" className="grid gap-3 grid-cols-[repeat(auto-fit,minmax(min(100%,16rem),1fr))]">
           {resultados.slice(0, 3).map((r, i) => (
             <Cartao key={r.produto.id} r={r} selo={SELOS[i]} destaque={i === 0} ativo={ativo?.produto.id === r.produto.id} escolher={() => setSelecionado(r.produto.id)} />
           ))}
@@ -174,8 +174,8 @@ export default function Consulta() {
       )}
 
       {ativo && (
-        <section aria-label="Produto escolhido" className="grid grid-cols-[minmax(0,1fr)] gap-4 pt-2">
-          <CabecalhoProduto p={ativo.produto} nivel={2} />
+        <section aria-label="Produto escolhido" className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] gap-[clamp(1rem,2vw,1.5rem)] items-start pt-2">
+          <div className="lg:sticky lg:top-20"><CabecalhoProduto p={ativo.produto} nivel={2} /></div>
           <ProdutoDetalhe key={ativo.produto.id} p={ativo.produto} />
         </section>
       )}

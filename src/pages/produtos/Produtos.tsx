@@ -33,7 +33,7 @@ export default function Produtos() {
       <Titulo sub="Onde usar, como aplicar, dados técnicos e materiais do Drive de cada produto.">Produtos</Titulo>
       <div className="grid gap-3 -mt-3">
         <CampoBusca valor={busca} mudar={(v) => atualizar('q', v)} rotulo="Buscar por nome, uso ou material" />
-        <div className="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 scroll-px-4">
+        <div className="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 scroll-px-4 md:flex-wrap md:overflow-visible md:mx-0 md:px-0">
           <Chip ativo={!familia} onClick={() => atualizar('familia', '')}>Todas</Chip>
           {familias.map((f) => <Chip key={f} cor={cor(f)} ativo={familia === f} onClick={() => atualizar('familia', familia === f ? '' : f)}>{f}</Chip>)}
         </div>
@@ -43,6 +43,7 @@ export default function Produtos() {
         <p className="text-mute m-0">Nenhum produto com “{busca}”. Descreva o pedido na <Link to={`/consulta?q=${encodeURIComponent(busca)}`}>Consulta</Link> que o app encontra o produto certo.</p>
       )}
 
+      <div className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-2 gap-x-6 gap-y-5 items-start">
       {grupos.map((g) => (
         <section key={g} className="grid gap-2">
           <h2 className="text-lg flex items-center gap-2">
@@ -65,6 +66,7 @@ export default function Produtos() {
           </ul>
         </section>
       ))}
+      </div>
     </div>
   )
 }

@@ -19,7 +19,7 @@ export function Titulo({ children, voltar, sub }: { children: ReactNode; voltar?
           <ArrowLeft size={16} aria-hidden /> Voltar
         </Link>
       )}
-      <h1 className="text-[28px] sm:text-[34px]">{children}</h1>
+      <h1 className="t-titulo">{children}</h1>
       {sub && <p className="text-mute m-0 max-w-[62ch]">{sub}</p>}
     </div>
   )
