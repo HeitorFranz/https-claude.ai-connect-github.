@@ -3,7 +3,7 @@ import type { Boletim } from '../lib/dados'
 
 function Lista({ itens, numerada }: { itens: string[]; numerada?: boolean }) {
   const Tag = numerada ? 'ol' : 'ul'
-  return <Tag className="m-0 pl-5 grid gap-1">{itens.map((i) => <li key={i}>{i}</li>)}</Tag>
+  return <Tag className={`m-0 pl-5 grid gap-1 ${numerada ? 'list-decimal' : 'list-disc'}`}>{itens.map((i) => <li key={i}>{i}</li>)}</Tag>
 }
 
 function Bloco({ icone: Icone, titulo, children, tom = '' }: { icone: typeof Sparkles; titulo: string; children: React.ReactNode; tom?: string }) {

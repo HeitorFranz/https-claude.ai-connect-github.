@@ -1,0 +1,1970 @@
+[
+ {
+  "id": "acetico-uso-geral",
+  "funcoes": [
+   "vedar",
+   "colar"
+  ],
+  "materiais_ok": [
+   "vidro",
+   "aluminio",
+   "ceramica"
+  ],
+  "materiais_proibidos": [
+   "concreto",
+   "espelho",
+   "galvanizado",
+   "ferro",
+   "policarbonato",
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": false,
+  "transparente": true,
+  "sem_cheiro": false,
+  "sem_pistola": true,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 120,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "acetico-100-profissional",
+  "funcoes": [
+   "vedar",
+   "colar"
+  ],
+  "materiais_ok": [
+   "vidro",
+   "aluminio",
+   "ceramica"
+  ],
+  "materiais_proibidos": [
+   "concreto",
+   "espelho",
+   "galvanizado",
+   "ferro",
+   "policarbonato",
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": false,
+  "transparente": true,
+  "sem_cheiro": false,
+  "sem_pistola": false,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 120,
+  "publico": [
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "acetico-multiuso",
+  "funcoes": [
+   "vedar",
+   "colar"
+  ],
+  "materiais_ok": [
+   "vidro",
+   "aluminio",
+   "ceramica"
+  ],
+  "materiais_proibidos": [
+   "concreto",
+   "espelho",
+   "galvanizado",
+   "ferro",
+   "policarbonato",
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": false,
+  "transparente": true,
+  "sem_cheiro": false,
+  "sem_pistola": false,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 120,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "acetico-alta-temperatura",
+  "funcoes": [
+   "vedar"
+  ],
+  "materiais_ok": [
+   "ferro",
+   "motor",
+   "vidro",
+   "aluminio"
+  ],
+  "materiais_proibidos": [
+   "concreto",
+   "espelho",
+   "galvanizado",
+   "policarbonato",
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "alta_temp"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": false,
+  "transparente": false,
+  "sem_cheiro": false,
+  "sem_pistola": true,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 315,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "acetico-100-sem-fungicida",
+  "funcoes": [
+   "vedar",
+   "colar"
+  ],
+  "materiais_ok": [
+   "vidro",
+   "aluminio",
+   "ceramica"
+  ],
+  "materiais_proibidos": [
+   "concreto",
+   "espelho",
+   "galvanizado",
+   "ferro",
+   "policarbonato",
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "aquario",
+   "submerso"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": false,
+  "transparente": true,
+  "sem_cheiro": false,
+  "sem_pistola": false,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 180,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": "Sem fungicida: em banheiro e área úmida comum pode mofar."
+ },
+ {
+  "id": "neutro-100",
+  "funcoes": [
+   "vedar",
+   "colar"
+  ],
+  "materiais_ok": [
+   "concreto",
+   "pedra",
+   "ceramica",
+   "ferro",
+   "vidro",
+   "policarbonato",
+   "pvc",
+   "aluminio",
+   "galvanizado"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": false,
+  "transparente": true,
+  "sem_cheiro": null,
+  "sem_pistola": false,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 120,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "neutro-alta-temperatura-ultra",
+  "funcoes": [
+   "vedar"
+  ],
+  "materiais_ok": [
+   "ferro",
+   "motor",
+   "vidro",
+   "aluminio"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "alta_temp"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": false,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 350,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "aluzinco",
+  "funcoes": [
+   "vedar"
+  ],
+  "materiais_ok": [
+   "galvanizado",
+   "aluminio",
+   "vidro",
+   "ferro",
+   "concreto",
+   "madeira"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": false,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": false,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 120,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "silicone-sem-cheiro-easy-pack",
+  "funcoes": [
+   "vedar"
+  ],
+  "materiais_ok": [
+   "vidro",
+   "ceramica",
+   "ferro",
+   "concreto"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "aquario"
+  ],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": true,
+  "sem_pistola": true,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "sela-trincas",
+  "funcoes": [
+   "preencher",
+   "vedar"
+  ],
+  "materiais_ok": [
+   "concreto",
+   "gesso"
+  ],
+  "materiais_proibidos": [
+   "espelho",
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario",
+   "molhado"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 60,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "tapa-tudo",
+  "funcoes": [
+   "preencher"
+  ],
+  "materiais_ok": [
+   "madeira",
+   "gesso",
+   "concreto"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [
+   "molhado",
+   "submerso"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "silicone-flexivel-base-d-agua",
+  "funcoes": [
+   "vedar",
+   "colar",
+   "preencher"
+  ],
+  "materiais_ok": [
+   "madeira",
+   "concreto",
+   "gesso",
+   "pedra"
+  ],
+  "materiais_proibidos": [
+   "espelho",
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario",
+   "molhado"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 60,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "veda-calhas",
+  "funcoes": [
+   "vedar"
+  ],
+  "materiais_ok": [
+   "galvanizado",
+   "aluminio",
+   "ferro"
+  ],
+  "materiais_proibidos": [
+   "espelho",
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "externo"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": null,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 60,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": "Precisa de tempo seco para curar: chuva logo após a aplicação lava o produto."
+ },
+ {
+  "id": "monta-e-fixa",
+  "funcoes": [
+   "colar",
+   "fixar"
+  ],
+  "materiais_ok": [
+   "madeira",
+   "concreto",
+   "gesso",
+   "pedra",
+   "ceramica"
+  ],
+  "materiais_proibidos": [
+   "espelho",
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 60,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "cola-rodape",
+  "funcoes": [
+   "colar",
+   "fixar"
+  ],
+  "materiais_ok": [
+   "madeira",
+   "gesso",
+   "ceramica",
+   "concreto"
+  ],
+  "materiais_proibidos": [
+   "espelho",
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 80,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "adesivo-para-pisos-vinilicos",
+  "funcoes": [
+   "colar"
+  ],
+  "materiais_ok": [
+   "concreto",
+   "pvc"
+  ],
+  "materiais_proibidos": [
+   "ceramica",
+   "madeira",
+   "ferro"
+  ],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [
+   "molhado",
+   "externo",
+   "submerso"
+  ],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 42,
+  "publico": [
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "pu-40-profissional",
+  "funcoes": [
+   "vedar",
+   "colar"
+  ],
+  "materiais_ok": [
+   "concreto",
+   "ferro",
+   "aluminio",
+   "madeira",
+   "vidro",
+   "ceramica",
+   "galvanizado"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 90,
+  "publico": [
+   "profissional"
+  ],
+  "aviso": "O boletim técnico diz para NÃO aplicar em juntas de movimentação; o material de divulgação indica para junta de dilatação. Confirmar com o fabricante."
+ },
+ {
+  "id": "pu-40-multiuso",
+  "funcoes": [
+   "vedar",
+   "colar"
+  ],
+  "materiais_ok": [
+   "vidro",
+   "aluminio",
+   "concreto",
+   "madeira",
+   "ferro",
+   "pedra",
+   "ceramica",
+   "galvanizado"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 90,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "pu-flex-uso-geral",
+  "funcoes": [
+   "vedar"
+  ],
+  "materiais_ok": [
+   "madeira",
+   "ferro",
+   "aluminio",
+   "ceramica",
+   "concreto",
+   "galvanizado"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 90,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "pu-calhas-pu-35-hibrido-construcao",
+  "funcoes": [
+   "vedar",
+   "colar"
+  ],
+  "materiais_ok": [
+   "galvanizado",
+   "ferro",
+   "aluminio",
+   "madeira",
+   "ceramica",
+   "concreto",
+   "vidro"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": false,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 90,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "silicone-hibrido-clear-24h-cores",
+  "funcoes": [
+   "vedar",
+   "colar"
+  ],
+  "materiais_ok": [
+   "aluminio",
+   "vidro",
+   "ceramica",
+   "concreto",
+   "madeira",
+   "pedra",
+   "pvc",
+   "ferro"
+  ],
+  "materiais_proibidos": [
+   "espelho",
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": true,
+  "transparente": true,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 60,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "high-tack-ultra",
+  "funcoes": [
+   "colar",
+   "fixar"
+  ],
+  "materiais_ok": [
+   "ferro",
+   "concreto",
+   "pedra",
+   "ceramica",
+   "vidro",
+   "policarbonato",
+   "pvc",
+   "madeira",
+   "espelho"
+  ],
+  "materiais_proibidos": [
+   "pe_pp",
+   "gesso"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": true,
+  "cura_rapida": true,
+  "temp_max_c": 90,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "fixa-tudo",
+  "funcoes": [
+   "colar",
+   "fixar"
+  ],
+  "materiais_ok": [
+   "ferro",
+   "concreto",
+   "pedra",
+   "ceramica",
+   "vidro",
+   "policarbonato",
+   "pvc",
+   "espelho"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": true,
+  "cura_rapida": false,
+  "temp_max_c": 90,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "fixa-cubas",
+  "funcoes": [
+   "colar",
+   "fixar"
+  ],
+  "materiais_ok": [
+   "pedra",
+   "ceramica",
+   "ferro",
+   "concreto"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": false,
+  "junta_movimentacao": false,
+  "aguenta_peso": true,
+  "cura_rapida": false,
+  "temp_max_c": 90,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "fixa-espelhos",
+  "funcoes": [
+   "colar",
+   "fixar"
+  ],
+  "materiais_ok": [
+   "espelho",
+   "ceramica",
+   "madeira",
+   "concreto"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": false,
+  "junta_movimentacao": false,
+  "aguenta_peso": true,
+  "cura_rapida": false,
+  "temp_max_c": 90,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "crystal-clear",
+  "funcoes": [
+   "colar",
+   "vedar"
+  ],
+  "materiais_ok": [
+   "ferro",
+   "concreto",
+   "pedra",
+   "ceramica",
+   "vidro",
+   "policarbonato",
+   "pvc",
+   "madeira"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": true,
+  "transparente": true,
+  "sem_cheiro": null,
+  "sem_pistola": false,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 90,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "parabrisas",
+  "funcoes": [
+   "colar"
+  ],
+  "materiais_ok": [
+   "vidro",
+   "ferro"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "externo"
+  ],
+  "ambientes_proibidos": [
+   "aquario"
+  ],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": false,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 90,
+  "publico": [
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "u-flex-pu-44",
+  "funcoes": [
+   "vedar"
+  ],
+  "materiais_ok": [
+   "concreto",
+   "ferro",
+   "aluminio"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": false,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "u-flex-pu-55",
+  "funcoes": [
+   "colar"
+  ],
+  "materiais_ok": [
+   "vidro",
+   "ferro"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "externo"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": false,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "espuma-pu-uso-geral",
+  "funcoes": [
+   "preencher",
+   "isolar",
+   "fixar"
+  ],
+  "materiais_ok": [
+   "ferro",
+   "madeira",
+   "concreto",
+   "ceramica",
+   "pedra"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [
+   "submerso"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": null,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 90,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "espuma-pu-multiuso",
+  "funcoes": [
+   "preencher",
+   "isolar",
+   "fixar"
+  ],
+  "materiais_ok": [
+   "ferro",
+   "madeira",
+   "concreto",
+   "ceramica",
+   "pedra"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [
+   "submerso"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": null,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 90,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "espuma-pu-profissional",
+  "funcoes": [
+   "preencher",
+   "isolar",
+   "fixar"
+  ],
+  "materiais_ok": [
+   "ferro",
+   "madeira",
+   "concreto",
+   "ceramica",
+   "pedra"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [
+   "submerso"
+  ],
+  "pintavel": true,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": false,
+  "junta_movimentacao": null,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 90,
+  "publico": [
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "chumbador-quimico-pro",
+  "funcoes": [
+   "ancorar",
+   "fixar"
+  ],
+  "materiais_ok": [
+   "concreto"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": false,
+  "junta_movimentacao": false,
+  "aguenta_peso": true,
+  "cura_rapida": true,
+  "temp_max_c": null,
+  "publico": [
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "adesivo-epoxi-pro-mf-tix",
+  "funcoes": [
+   "colar",
+   "ancorar"
+  ],
+  "materiais_ok": [
+   "concreto",
+   "ferro",
+   "pedra"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": true,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "bond-007",
+  "funcoes": [
+   "colar"
+  ],
+  "materiais_ok": [
+   "ferro",
+   "madeira",
+   "ceramica",
+   "tecido",
+   "pvc"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [
+   "submerso"
+  ],
+  "pintavel": null,
+  "transparente": true,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": true,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "colas-brancas-original-extra-multiuso-extra",
+  "funcoes": [
+   "colar"
+  ],
+  "materiais_ok": [
+   "madeira",
+   "tecido"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [
+   "molhado",
+   "submerso"
+  ],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": true,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "cola-madeira",
+  "funcoes": [
+   "colar"
+  ],
+  "materiais_ok": [
+   "madeira"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [
+   "molhado",
+   "submerso"
+  ],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": true,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": true,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "fita-crepe",
+  "funcoes": [
+   "proteger",
+   "fixar"
+  ],
+  "materiais_ok": [],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "silver-tape",
+  "funcoes": [
+   "vedar",
+   "fixar"
+  ],
+  "materiais_ok": [
+   "ferro",
+   "pvc",
+   "tecido"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "fita-isolante",
+  "funcoes": [
+   "isolar"
+  ],
+  "materiais_ok": [
+   "eletrico"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 80,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "demarcacao-antiderrapante-empacotamento-dupla-face",
+  "funcoes": [
+   "fixar",
+   "proteger"
+  ],
+  "materiais_ok": [
+   "concreto",
+   "vidro",
+   "ferro",
+   "madeira",
+   "ceramica"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": true,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "fita-veda-rosca",
+  "funcoes": [
+   "vedar"
+  ],
+  "materiais_ok": [
+   "pvc",
+   "ferro"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 240,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "anel-de-vedacao-para-vaso",
+  "funcoes": [
+   "vedar"
+  ],
+  "materiais_ok": [
+   "ceramica",
+   "pvc"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "molhado"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 50,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "uni-lub",
+  "funcoes": [
+   "desengripar",
+   "lubrificar",
+   "proteger"
+  ],
+  "materiais_ok": [
+   "ferro",
+   "motor"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "uni-80",
+  "funcoes": [
+   "limpar"
+  ],
+  "materiais_ok": [
+   "motor"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "graxa-branca-graxa-spray-grafite-vaselina-silicone-spray-lub-correntes",
+  "funcoes": [
+   "lubrificar",
+   "proteger"
+  ],
+  "materiais_ok": [
+   "ferro",
+   "motor",
+   "plastico",
+   "tecido"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "molhado"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "limpa-contato",
+  "funcoes": [
+   "limpar"
+  ],
+  "materiais_ok": [
+   "eletrico"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "antirrespingo-de-solda",
+  "funcoes": [
+   "proteger"
+  ],
+  "materiais_ok": [
+   "ferro"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "gas-para-macarico",
+  "funcoes": [
+   "aquecer"
+  ],
+  "materiais_ok": [
+   "ferro"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "externo"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "unispray-uso-geral-metalico-fluorescente-alta-temp-verniz",
+  "funcoes": [
+   "pintar",
+   "proteger"
+  ],
+  "materiais_ok": [
+   "ferro",
+   "madeira",
+   "ceramica",
+   "gesso"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "externo",
+   "alta_temp"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 600,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": "Só a versão Alta Temperatura aguenta calor (até 600 °C); a Uso Geral não."
+ },
+ {
+  "id": "corante-liquido",
+  "funcoes": [
+   "pintar"
+  ],
+  "materiais_ok": [],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": "Só para tintas à base de água."
+ },
+ {
+  "id": "espuma-limpa-tudo",
+  "funcoes": [
+   "limpar"
+  ],
+  "materiais_ok": [
+   "tecido"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "protetor-de-tecidos",
+  "funcoes": [
+   "proteger"
+  ],
+  "materiais_ok": [
+   "tecido"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "odorizador-e-limpa-ar-condicionado",
+  "funcoes": [
+   "perfumar",
+   "limpar"
+  ],
+  "materiais_ok": [],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "gancho-suporte-feltro-e-anti-impacto",
+  "funcoes": [
+   "fixar",
+   "proteger"
+  ],
+  "materiais_ok": [
+   "ceramica",
+   "madeira",
+   "vidro"
+  ],
+  "materiais_proibidos": [],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [],
+  "pintavel": null,
+  "transparente": true,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "adesivo-placas-pvc",
+  "funcoes": [
+   "colar",
+   "fixar"
+  ],
+  "materiais_ok": [
+   "pvc",
+   "madeira",
+   "gesso",
+   "concreto"
+  ],
+  "materiais_proibidos": [
+   "espelho",
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": null,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": false,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": null,
+  "publico": [
+   "consumidor",
+   "profissional"
+  ],
+  "aviso": null
+ },
+ {
+  "id": "silicone-neutro-vidro-duplo",
+  "funcoes": [
+   "vedar"
+  ],
+  "materiais_ok": [
+   "vidro"
+  ],
+  "materiais_proibidos": [
+   "pe_pp"
+  ],
+  "ambientes_ok": [
+   "interno",
+   "externo"
+  ],
+  "ambientes_proibidos": [
+   "submerso",
+   "aquario"
+  ],
+  "pintavel": false,
+  "transparente": false,
+  "sem_cheiro": null,
+  "sem_pistola": true,
+  "junta_movimentacao": true,
+  "aguenta_peso": false,
+  "cura_rapida": false,
+  "temp_max_c": 180,
+  "publico": [
+   "profissional"
+  ],
+  "aviso": null
+ }
+]

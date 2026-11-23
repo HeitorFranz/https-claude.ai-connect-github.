@@ -80,7 +80,7 @@ export function Aplicar() {
         {conhecimento.como_aplicar.map((c) => (
           <Cartao key={c.titulo}>
             <h2 className="text-lg mb-2">{c.titulo}</h2>
-            <ol className="m-0 pl-5 grid gap-1">{c.passos.map((p) => <li key={p}>{p}</li>)}</ol>
+            <ol className="m-0 pl-5 grid gap-1 list-decimal">{c.passos.map((p) => <li key={p}>{p}</li>)}</ol>
           </Cartao>
         ))}
       </div>

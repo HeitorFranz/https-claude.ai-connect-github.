@@ -37,10 +37,11 @@ export type Resultado = { produto: Produto; pontos: number; motivos: string[]; a
 
 const contem = (alvo: string, t: string) => new RegExp(`(^|[^a-z0-9])${t}`).test(alvo)
 
-export function buscar(texto: string): Resultado[] {
+/** Pontuação só pelo texto, para todos os produtos (inclui zero e negativos). */
+export function pontuarTexto(texto: string): Resultado[] {
   const ws = palavras(texto)
   const ts = ws.map((w) => w.raiz)
-  if (!ts.length) return []
+  if (!ts.length) return produtos.map((produto) => ({ produto, pontos: 0, motivos: [], alertas: [] }))
   const frase = normalizar(texto).trim()
 
   // Problemas conhecidos cuja frase do cliente bate com a busca dão pontos aos produtos citados na solução.
@@ -75,5 +76,9 @@ export function buscar(texto: string): Resultado[] {
     return { produto: p, pontos, motivos: [...new Set(motivos)], alertas }
   })
 
-  return res.filter((r) => r.pontos > 0).sort((a, b) => b.pontos - a.pontos)
+  return res
+}
+
+export function buscar(texto: string): Resultado[] {
+  return pontuarTexto(texto).filter((r) => r.pontos > 0).sort((a, b) => b.pontos - a.pontos)
 }

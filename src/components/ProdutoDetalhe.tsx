@@ -59,7 +59,7 @@ export default function ProdutoDetalhe({ p }: { p: Produto }) {
         </Cartao>
         <Cartao>
           <h3 className="text-lg text-no mb-1 flex items-center gap-2"><Ban size={20} aria-hidden />Não usar</h3>
-          <p className="m-0">{p.nao_usar}</p>
+          <p className="m-0">{/^[—-]?$/.test(p.nao_usar.trim()) ? (bols.some((b) => b.limitacoes) ? 'Veja “O que NÃO fazer” no boletim técnico abaixo.' : 'Sem restrições informadas.') : p.nao_usar}</p>
         </Cartao>
         <Cartao className="sm:col-span-2">
           <h3 className="text-lg mb-1 flex items-center gap-2"><Package size={20} aria-hidden />Embalagens e cores</h3>
@@ -79,7 +79,7 @@ export default function ProdutoDetalhe({ p }: { p: Produto }) {
       {aplicar.map((c) => (
         <section key={c.titulo}>
           <h3 className="text-xl mb-2">Dica do treinamento — {c.titulo}</h3>
-          <ol className="m-0 pl-5 grid gap-1 bg-panel border border-line rounded-xl py-4 pr-4">{c.passos.map((s) => <li key={s}>{s}</li>)}</ol>
+          <ol className="m-0 pl-5 grid gap-1 list-decimal bg-panel border border-line rounded-xl py-4 pr-4">{c.passos.map((s) => <li key={s}>{s}</li>)}</ol>
         </section>
       ))}
 
