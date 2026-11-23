@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { Ban, CheckCircle2, Package } from 'lucide-react'
-import { arquivosDoProduto, conhecimento, fichasDoProduto, normalizar, produtos, type Ficha, type Produto } from '../lib/dados'
+import { arquivosDoProduto, boletinsDoProduto, conhecimento, fichasDoProduto, normalizar, produtos, type Ficha, type Produto } from '../lib/dados'
 import ArquivosRelacionados from './ArquivosRelacionados'
+import BoletimTecnico from './BoletimTecnico'
 import { Cartao } from './ui'
 
 const rotulosFicha: Record<string, string> = {
@@ -42,7 +43,8 @@ function problemasDo(p: Produto) {
 }
 
 export default function ProdutoDetalhe({ p }: { p: Produto }) {
-  const fichas = fichasDoProduto(p.id)
+  const bols = boletinsDoProduto(p.id)
+  const fichas = bols.length ? [] : fichasDoProduto(p.id)
   const arqs = arquivosDoProduto(p)
   const aplicar = comoAplicarDo(p)
   const problemas = problemasDo(p)
@@ -65,9 +67,18 @@ export default function ProdutoDetalhe({ p }: { p: Produto }) {
         </Cartao>
       </div>
 
+      <section>
+        <h3 className="text-xl mb-2">Boletim técnico</h3>
+        {bols.length ? (
+          <div className="grid gap-2">{bols.map((b, i) => <BoletimTecnico key={b.boletim_id} b={b} aberto={i === 0} />)}</div>
+        ) : (
+          <p className="text-mute text-sm m-0">Este produto não tem boletim técnico em português na pasta do Drive.</p>
+        )}
+      </section>
+
       {aplicar.map((c) => (
         <section key={c.titulo}>
-          <h3 className="text-xl mb-2">Como aplicar — {c.titulo}</h3>
+          <h3 className="text-xl mb-2">Dica do treinamento — {c.titulo}</h3>
           <ol className="m-0 pl-5 grid gap-1 bg-panel border border-line rounded-xl py-4 pr-4">{c.passos.map((s) => <li key={s}>{s}</li>)}</ol>
         </section>
       ))}

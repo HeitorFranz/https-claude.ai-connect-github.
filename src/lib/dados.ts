@@ -3,6 +3,7 @@ import arquivosJson from '../../data/arquivos_drive.json'
 import conhecimentoJson from '../../data/conhecimento.json'
 import matrizJson from '../../data/matriz_quimica_material.json'
 import fichasJson from '../../data/fichas_tecnicas.json'
+import boletinsJson from '../../data/boletins.json'
 
 export type Produto = {
   id: string
@@ -31,7 +32,20 @@ export type Arquivo = {
 
 export type Ficha = Record<string, string | number | boolean | string[] | null>
 
+export type Boletim = {
+  boletim_id: string
+  titulo: string
+  caracteristicas: string
+  preparo: string[]
+  modo_de_uso: string[]
+  limitacoes: string
+  armazenamento: string
+  dados: Record<string, string>
+}
+
 export const produtos = produtosJson as Produto[]
+export const boletins = boletinsJson as unknown as Record<string, Boletim[]>
+export const boletinsDoProduto = (id: string): Boletim[] => boletins[id] ?? []
 export const arquivos = arquivosJson as Arquivo[]
 export const conhecimento = conhecimentoJson
 export const matriz = matrizJson as {

@@ -1913,5 +1913,49 @@
    "1CSav3Zr7Ac91_HjtCCCjrvRIwwktdpBH",
    "1N_I3R5jgaxFrnLyq_JdWF0PDUrPAL04M"
   ]
+ },
+ {
+  "id": "adesivo-placas-pvc",
+  "familia": "Acrílicos",
+  "nome": "Adesivo para Placas de PVC",
+  "o_que_e": "Adesivo de resina acrílica para instalar painéis (placas) de PVC.",
+  "usar_em": "Placas e painéis de PVC sobre plástico, madeira, tijolo, gesso e MDF.",
+  "nao_usar": "Espelhos, aquários, PE/PP/nylon/acrílico/teflon, contato com alimentos, imersão, paredes com tinta ou impermeabilizante.",
+  "embalagens": "Não informado no boletim.",
+  "dica_venda": "",
+  "termos_busca": [
+   "pvc",
+   "placa",
+   "painel",
+   "forro",
+   "parede",
+   "revestimento"
+  ],
+  "palavras_arquivos": [],
+  "arquivos_relacionados": [
+   "1B2-iFrf9U1ySgXE6_GI_YZ_ABjXq4O0P",
+   "1h3IF6N1McO68oP0yYFfenInN27MsWD1s"
+  ]
+ },
+ {
+  "id": "silicone-neutro-vidro-duplo",
+  "familia": "Silicones neutros",
+  "nome": "Silicone Neutro Vidro Duplo",
+  "o_que_e": "Silicone de cura neutra e alta adesão para vidros isolantes e vidros duplos (dupla barreira).",
+  "usar_em": "Vidros duplos e insulados, método de dupla barreira.",
+  "nao_usar": "Aquários, PE/PP/nylon/acrílico/teflon, contato com alimentos, imersão, fachadas de vidro estruturais. Não aceita pintura.",
+  "embalagens": "Não informado no boletim. Cor preta.",
+  "dica_venda": "",
+  "termos_busca": [
+   "vidro duplo",
+   "vidro insulado",
+   "insulado",
+   "dupla barreira",
+   "vidracaria"
+  ],
+  "palavras_arquivos": [],
+  "arquivos_relacionados": [
+   "1GpVNHOSEnVEwKL2BQCySZIRZMpt-zzwR"
+  ]
  }
 ]

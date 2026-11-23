@@ -1,4 +1,4 @@
-import { conhecimento, normalizar, produtos, type Produto } from './dados'
+import { boletinsDoProduto, conhecimento, normalizar, produtos, type Produto } from './dados'
 
 const PARADAS = new Set(
   'a o as os um uma uns umas de da do das dos e em no na nos nas para pra pro por com sem que se ser esta esta ta ja eu ele ela cliente quer queria preciso precisa algo coisa fazer muito mais bem tem ter vai como qual onde meu minha sua seu isso esse essa nao'.split(' '),
@@ -50,7 +50,8 @@ export function buscar(texto: string): Resultado[] {
 
   const res: Resultado[] = produtos.map((p) => {
     const nome = normalizar(p.nome)
-    const usar = normalizar(p.usar_em + ' ' + p.o_que_e)
+    const bols = boletinsDoProduto(p.id)
+    const usar = normalizar([p.usar_em, p.o_que_e, ...bols.map((b) => b.caracteristicas)].join(' '))
     const nao = normalizar(p.nao_usar)
     const chaves = p.termos_busca.map(normalizar)
     let pontos = 0
