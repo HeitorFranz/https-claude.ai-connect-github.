@@ -4,6 +4,7 @@ import { AlertTriangle, Ban, ChevronDown, Info, Search, SlidersHorizontal, X } f
 import { filtrosVazios, OPCOES, recomendar, type Filtros, type Grupo, type Recomendado } from '../../lib/recomendar'
 import ProdutoDetalhe, { CabecalhoProduto } from '../../components/ProdutoDetalhe'
 import { cor } from '../../lib/dados'
+import { PrecoAPartir } from '../../components/PrecosProduto'
 
 const TITULOS: Record<Grupo, string> = { funcoes: 'O que precisa fazer', materiais: 'Material / superfície', ambientes: 'Ambiente', exigencias: 'Exigências' }
 const SELOS = ['Melhor opção', 'Alternativa', 'Também serve']
@@ -20,6 +21,7 @@ function Cartao({ r, selo, ativo, escolher, destaque }: { r: Recomendado; selo: 
         </span>
         <span className="text-xl font-extrabold leading-tight">{r.produto.nome}</span>
         <span className="text-sm text-mute">{r.produto.o_que_e}</span>
+        <PrecoAPartir produtoId={r.produto.id} />
         {r.porque.length > 0 && (
           <span className="flex flex-wrap gap-1 mt-1">
             {r.porque.slice(0, 5).map((m) => <span key={m} className="text-xs font-bold bg-okbg text-ok rounded-full px-2 py-0.5">{m.replace(/^resolve: /, '')}</span>)}

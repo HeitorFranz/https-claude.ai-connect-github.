@@ -4,6 +4,7 @@ import { AlertTriangle, Archive, Ban, CheckCircle2, ExternalLink, FileText, Ligh
 import { arquivosDoProduto, boletinsDoProduto, conhecimento, cor, fichasDoProduto, normalizar, produtos, type Boletim, type Produto } from '../lib/dados'
 import { atributos } from '../lib/recomendar'
 import ArquivosRelacionados from './ArquivosRelacionados'
+import PrecosProduto, { PrecoAPartir } from './PrecosProduto'
 
 /* ---------- utilidades ---------- */
 
@@ -91,6 +92,7 @@ export function CabecalhoProduto({ p, nivel = 1 }: { p: Produto; nivel?: 1 | 2 }
           </dl>
         )}
         <p className="m-0 text-sm flex gap-2 text-mute"><Package size={17} className="shrink-0 mt-0.5" aria-hidden />{p.embalagens}</p>
+        <PrecoAPartir produtoId={p.id} />
       </div>
     </header>
   )
@@ -98,7 +100,7 @@ export function CabecalhoProduto({ p, nivel = 1 }: { p: Produto; nivel?: 1 | 2 }
 
 /* ---------- abas ---------- */
 
-type Aba = 'geral' | 'aplicar' | 'tecnico' | 'materiais'
+type Aba = 'geral' | 'precos' | 'aplicar' | 'tecnico' | 'materiais'
 
 export default function ProdutoDetalhe({ p }: { p: Produto }) {
   const [aba, setAba] = useState<Aba>('geral')
@@ -114,6 +116,7 @@ export default function ProdutoDetalhe({ p }: { p: Produto }) {
 
   const abas: { id: Aba; nome: string; n?: number }[] = [
     { id: 'geral', nome: 'Geral' },
+    { id: 'precos', nome: 'Preços' },
     { id: 'aplicar', nome: 'Aplicar' },
     { id: 'tecnico', nome: 'Técnico' },
     { id: 'materiais', nome: 'Materiais', n: arqs.length },
@@ -121,11 +124,11 @@ export default function ProdutoDetalhe({ p }: { p: Produto }) {
 
   return (
     <div className="grid grid-cols-[minmax(0,1fr)] gap-4 content-start">
-      <div role="tablist" aria-label="Informações do produto" className="grid grid-cols-4 gap-1 p-1 bg-panel border border-line rounded-xl">
+      <div role="tablist" aria-label="Informações do produto" className="grid grid-cols-5 gap-1 p-1 bg-panel border border-line rounded-xl">
         {abas.map((x) => (
           <button key={x.id} role="tab" type="button" aria-selected={aba === x.id} onClick={() => setAba(x.id)}
-            className={`h-10 px-1 rounded-lg text-[13px] sm:text-sm font-bold whitespace-nowrap cursor-pointer transition-colors duration-150 ${aba === x.id ? 'bg-ink text-panel' : 'text-mute hover:text-ink'}`}>
-            {x.nome}{x.n ? <span className="ml-1.5 opacity-70">{x.n}</span> : null}
+            className={`h-10 px-0.5 rounded-lg text-[12px] sm:text-sm font-bold whitespace-nowrap cursor-pointer transition-colors duration-150 ${aba === x.id ? 'bg-ink text-panel' : 'text-mute hover:text-ink'}`}>
+            {x.nome}{x.n ? <span className="hidden sm:inline ml-1.5 opacity-70">{x.n}</span> : null}
           </button>
         ))}
       </div>
@@ -218,6 +221,7 @@ export default function ProdutoDetalhe({ p }: { p: Produto }) {
           </>
         )}
 
+        {aba === 'precos' && <PrecosProduto produtoId={p.id} />}
         {aba === 'materiais' && <ArquivosRelacionados lista={arqs} />}
       </div>
     </div>
