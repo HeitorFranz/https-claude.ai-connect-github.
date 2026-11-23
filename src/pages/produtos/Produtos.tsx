@@ -1,9 +1,8 @@
 import { useMemo } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { ChevronRight } from 'lucide-react'
-import { familias, normalizar, produtos } from '../../lib/dados'
-import { CampoBusca, Chip } from '../../components/ui'
-import { secoes } from './secoes'
+import { boletinsDoProduto, cor, familias, normalizar, produtos } from '../../lib/dados'
+import { CampoBusca, Chip, Titulo } from '../../components/ui'
 
 export default function Produtos() {
   const [params, setParams] = useSearchParams()
@@ -27,50 +26,45 @@ export default function Produtos() {
     })
   }, [busca, familia])
 
+  const grupos = familias.filter((f) => lista.some((p) => p.familia === f))
+
   return (
-    <div className="grid grid-cols-[minmax(0,1fr)] gap-6">
-      <div>
-        <h1 className="text-3xl mb-1">Produtos</h1>
-        <p className="text-mute m-0">Tudo sobre cada produto Unipega: onde usar, como aplicar, cuidados e materiais do Drive.</p>
+    <div className="grid grid-cols-[minmax(0,1fr)] gap-5">
+      <Titulo sub="Onde usar, como aplicar, dados técnicos e materiais do Drive de cada produto.">Produtos</Titulo>
+      <div className="grid gap-3 -mt-3">
+        <CampoBusca valor={busca} mudar={(v) => atualizar('q', v)} rotulo="Buscar por nome, uso ou material" />
+        <div className="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 scroll-px-4">
+          <Chip ativo={!familia} onClick={() => atualizar('familia', '')}>Todas</Chip>
+          {familias.map((f) => <Chip key={f} cor={cor(f)} ativo={familia === f} onClick={() => atualizar('familia', familia === f ? '' : f)}>{f}</Chip>)}
+        </div>
       </div>
 
-      <section aria-labelledby="guia">
-        <h2 id="guia" className="text-sm font-bold uppercase tracking-wide text-mute mb-2">Guia técnico</h2>
-        <div className="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 scroll-px-4 snap-x">
-          {secoes.map((s) => (
-            <Link key={s.slug} to={s.slug}
-              className="snap-start shrink-0 w-40 no-underline text-ink bg-panel border border-line rounded-xl p-3 grid gap-1 hover:border-red transition-colors duration-150">
-              <s.icone size={20} className="text-red" aria-hidden />
-              <span className="font-bold leading-tight">{s.titulo}</span>
-              <span className="text-xs text-mute leading-snug">{s.desc}</span>
-            </Link>
-          ))}
-        </div>
-      </section>
+      {!lista.length && (
+        <p className="text-mute m-0">Nenhum produto com “{busca}”. Descreva o pedido na <Link to={`/consulta?q=${encodeURIComponent(busca)}`}>Consulta</Link> que o app encontra o produto certo.</p>
+      )}
 
-      <section className="grid grid-cols-[minmax(0,1fr)] gap-3">
-        <CampoBusca valor={busca} mudar={(v) => atualizar('q', v)} rotulo="Buscar produto, uso ou material" />
-        <div className="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4">
-          <Chip ativo={!familia} onClick={() => atualizar('familia', '')}>Todas</Chip>
-          {familias.map((f) => <Chip key={f} ativo={familia === f} onClick={() => atualizar('familia', familia === f ? '' : f)}>{f}</Chip>)}
-        </div>
-        <p className="text-sm text-mute m-0" aria-live="polite">{lista.length} produto{lista.length === 1 ? '' : 's'}</p>
-        <ul className="list-none p-0 m-0 grid gap-2 sm:grid-cols-2">
-          {lista.map((p) => (
-            <li key={p.id}>
-              <Link to={`p/${p.id}`} className="no-underline text-ink bg-panel border border-line rounded-xl p-4 flex items-center gap-3 hover:border-red transition-colors duration-150 h-full">
-                <span className="grid gap-0.5 flex-1">
-                  <span className="text-xs font-bold text-red uppercase">{p.familia}</span>
-                  <span className="font-extrabold text-lg leading-tight">{p.nome}</span>
-                  <span className="text-sm text-mute">{p.o_que_e}</span>
-                </span>
-                <ChevronRight size={20} className="text-mute shrink-0" aria-hidden />
-              </Link>
-            </li>
-          ))}
-        </ul>
-        {!lista.length && <p className="text-mute">Nenhum produto encontrado. Tente a <Link to="/consulta">Consulta UNIPEGA</Link> descrevendo o que o cliente precisa.</p>}
-      </section>
+      {grupos.map((g) => (
+        <section key={g} className="grid gap-2">
+          <h2 className="text-lg flex items-center gap-2">
+            <span className="w-3 h-3 rounded-full" style={{ background: cor(g) }} aria-hidden />{g}
+            <span className="text-mute text-sm font-bold">{lista.filter((p) => p.familia === g).length}</span>
+          </h2>
+          <ul className="list-none p-0 m-0 bg-panel border border-line rounded-2xl divide-y divide-line overflow-hidden">
+            {lista.filter((p) => p.familia === g).map((p) => (
+              <li key={p.id}>
+                <Link to={`p/${p.id}`} className="no-underline text-ink flex items-center gap-3 px-4 py-3.5 hover:bg-bg transition-colors duration-150">
+                  <span className="grid flex-1 min-w-0">
+                    <span className="font-extrabold leading-tight">{p.nome}</span>
+                    <span className="text-sm text-mute truncate">{p.o_que_e}</span>
+                  </span>
+                  {boletinsDoProduto(p.id).length > 0 && <span className="hidden sm:inline text-xs font-bold text-mute border border-line rounded-full px-2 py-0.5">boletim</span>}
+                  <ChevronRight size={20} className="text-mute shrink-0" aria-hidden />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
     </div>
   )
 }

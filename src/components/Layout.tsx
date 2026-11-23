@@ -1,27 +1,55 @@
-import { Link, Outlet, useLocation } from 'react-router-dom'
-import { House, LogOut } from 'lucide-react'
+import { Link, NavLink, Outlet } from 'react-router-dom'
+import { BookOpen, LogOut, Package, Search } from 'lucide-react'
 import { useAuth } from '../auth/AuthProvider'
+
+const abas = [
+  { to: '/consulta', label: 'Consultar', Icone: Search },
+  { to: '/produtos', label: 'Produtos', Icone: Package },
+  { to: '/guia', label: 'Guia técnico', Icone: BookOpen },
+]
+
+function Marca() {
+  return (
+    <Link to="/" className="flex items-center gap-2.5 no-underline text-bar-ink shrink-0" aria-label="Consulta Unipega — início">
+      <span className="w-8 h-8 rounded-md bg-red grid place-items-center text-white font-extrabold text-lg leading-none">U</span>
+      <span className="leading-tight">
+        <span className="block font-extrabold tracking-tight">Consulta Unipega</span>
+        <span className="block text-xs text-bar-ink/60">Maper</span>
+      </span>
+    </Link>
+  )
+}
 
 export default function Layout() {
   const { sair } = useAuth()
-  const { pathname } = useLocation()
-  const area = pathname.startsWith('/consulta') ? 'Consultar UNIPEGA' : pathname.startsWith('/produtos') ? 'Produtos' : null
-
   return (
     <div className="min-h-dvh flex flex-col overflow-x-clip">
-      <header className="bg-red text-white sticky top-0 z-10">
-        <div className="max-w-5xl mx-auto px-4 h-14 flex items-center gap-2">
-          {area ? (
-            <Link to="/" aria-label="Voltar ao início" className="text-white w-11 h-11 -ml-2 grid place-items-center rounded-lg hover:bg-white/10 transition-colors duration-150"><House size={22} /></Link>
-          ) : null}
-          <Link to="/" className="text-white no-underline font-extrabold text-lg tracking-tight truncate">{area ?? 'Consulta UNIPEGA'}</Link>
-          {!area && <span className="text-sm opacity-85">· Maper</span>}
-          <button onClick={sair} className="ml-auto text-sm font-medium px-3 h-11 rounded-full flex items-center gap-1.5 cursor-pointer hover:bg-white/10 transition-colors duration-150">
-            <LogOut size={18} aria-hidden /> Sair
+      <header className="bg-bar text-bar-ink sticky top-0 z-20 shadow-[0_1px_0_rgba(255,255,255,0.06)]">
+        <div className="max-w-5xl mx-auto px-4 h-14 flex items-center gap-6">
+          <Marca />
+          <nav aria-label="Principal" className="hidden sm:flex h-full items-stretch gap-1">
+            {abas.map(({ to, label, Icone }) => (
+              <NavLink key={to} to={to}
+                className={({ isActive }) => `relative px-3 flex items-center gap-2 no-underline text-sm font-bold transition-colors duration-150 ${isActive ? 'text-white after:absolute after:inset-x-3 after:bottom-0 after:h-[3px] after:rounded-t after:bg-red' : 'text-bar-ink/65 hover:text-white'}`}>
+                <Icone size={17} aria-hidden />{label}
+              </NavLink>
+            ))}
+          </nav>
+          <button onClick={sair} aria-label="Sair"
+            className="ml-auto h-10 px-3 rounded-lg flex items-center gap-2 text-sm font-bold text-bar-ink/80 cursor-pointer hover:bg-white/10 hover:text-white transition-colors duration-150">
+            <LogOut size={18} aria-hidden /><span className="hidden sm:inline">Sair</span>
           </button>
         </div>
+        <nav aria-label="Principal" className="sm:hidden grid grid-cols-3 border-t border-white/10">
+          {abas.map(({ to, label, Icone }) => (
+            <NavLink key={to} to={to}
+              className={({ isActive }) => `relative h-12 flex items-center justify-center gap-1.5 no-underline text-[13px] font-bold ${isActive ? 'text-white after:absolute after:inset-x-4 after:bottom-0 after:h-[3px] after:rounded-t after:bg-red' : 'text-bar-ink/60'}`}>
+              <Icone size={16} aria-hidden />{label}
+            </NavLink>
+          ))}
+        </nav>
       </header>
-      <main className="flex-1 min-w-0 w-full max-w-5xl mx-auto px-4 py-6 pb-16">
+      <main className="flex-1 min-w-0 w-full max-w-5xl mx-auto px-4 pt-6 pb-16">
         <Outlet />
       </main>
     </div>

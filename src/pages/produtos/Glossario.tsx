@@ -10,7 +10,7 @@ export default function Glossario() {
     .filter((g) => !t || normalizar(g.termo + ' ' + g.definicao).includes(t))
   return (
     <div>
-      <Titulo>Glossário</Titulo>
+      <Titulo voltar="/guia">Glossário</Titulo>
       <div className="mb-4"><CampoBusca valor={busca} mudar={setBusca} rotulo="Buscar termo" /></div>
       <dl className="m-0 grid gap-2">
         {lista.map((g) => (

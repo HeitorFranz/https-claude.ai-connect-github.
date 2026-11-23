@@ -27,21 +27,21 @@ export default function Login() {
   }
 
   return (
-    <main className="min-h-dvh grid place-items-center px-4">
+    <main className="min-h-dvh grid place-items-center px-4 bg-bar">
       <form onSubmit={entrar} className="w-full max-w-sm bg-panel border border-line rounded-2xl p-6 grid gap-4">
-        <div>
-          <p className="text-sm font-bold text-red uppercase tracking-wide">Maper</p>
-          <h1 className="text-3xl">Consulta UNIPEGA</h1>
+        <div className="flex items-center gap-3">
+          <span className="w-11 h-11 rounded-lg bg-red grid place-items-center text-white font-extrabold text-2xl">U</span>
+          <div><h1 className="text-2xl">Consulta Unipega</h1><p className="m-0 text-sm text-mute">Maper</p></div>
         </div>
         <label className="grid gap-1 text-sm font-medium">
           Email
           <input type="email" required autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)}
-            className="h-12 px-3 rounded-lg border border-line bg-bg text-base" />
+            className="h-12 px-3 rounded-lg border border-line bg-bg text-base outline-none focus:border-ink" />
         </label>
         <label className="grid gap-1 text-sm font-medium">
           Senha
           <input type="password" required autoComplete="current-password" value={senha} onChange={(e) => setSenha(e.target.value)}
-            className="h-12 px-3 rounded-lg border border-line bg-bg text-base" />
+            className="h-12 px-3 rounded-lg border border-line bg-bg text-base outline-none focus:border-ink" />
         </label>
         {erro && <p role="alert" className="text-no text-sm">{erro}</p>}
         <button disabled={enviando} className="h-12 rounded-lg bg-red text-white font-bold disabled:opacity-60">

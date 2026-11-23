@@ -1,12 +1,26 @@
 import { useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
+import { ArrowLeft } from 'lucide-react'
 
-export function Titulo({ children, voltar = '/produtos', sub }: { children: ReactNode; voltar?: string; sub?: ReactNode }) {
+export function Voltar({ para, rotulo = 'Voltar' }: { para: string; rotulo?: string }) {
   return (
-    <div className="mb-5 grid gap-1">
-      <Link to={voltar} className="text-sm font-medium no-underline">← Voltar</Link>
-      <h1 className="text-3xl">{children}</h1>
-      {sub && <p className="text-mute max-w-[62ch]">{sub}</p>}
+    <Link to={para} className="inline-flex items-center gap-1 text-sm font-bold no-underline text-mute hover:text-ink w-fit min-h-8">
+      <ArrowLeft size={16} aria-hidden /> {rotulo}
+    </Link>
+  )
+}
+
+/** Cabeçalho de página: voltar (opcional), título e uma linha de contexto. */
+export function Titulo({ children, voltar, sub }: { children: ReactNode; voltar?: string; sub?: ReactNode }) {
+  return (
+    <div className="mb-6 grid gap-2">
+      {voltar && (
+        <Link to={voltar} className="inline-flex items-center gap-1 text-sm font-bold no-underline text-mute hover:text-ink w-fit min-h-8">
+          <ArrowLeft size={16} aria-hidden /> Voltar
+        </Link>
+      )}
+      <h1 className="text-[28px] sm:text-[34px]">{children}</h1>
+      {sub && <p className="text-mute m-0 max-w-[62ch]">{sub}</p>}
     </div>
   )
 }
@@ -18,7 +32,7 @@ export function Cartao({ children, className = '' }: { children: ReactNode; clas
 export function CampoBusca({ valor, mudar, rotulo }: { valor: string; mudar: (v: string) => void; rotulo: string }) {
   return (
     <input type="search" value={valor} onChange={(e) => mudar(e.target.value)} placeholder={rotulo} aria-label={rotulo}
-      className="w-full h-12 px-3 rounded-lg border border-line bg-panel text-base" />
+      className="w-full h-12 px-4 rounded-xl border border-line bg-panel text-base focus:border-ink outline-none" />
   )
 }
 
@@ -39,16 +53,18 @@ export function BotaoCopiar({ texto, rotulo = 'Copiar', className = '' }: { text
     setTimeout(() => setOk(false), 1500)
   }
   return (
-    <button type="button" onClick={copiar} className={`h-11 px-3 shrink-0 rounded-lg border border-line bg-bg text-sm font-bold cursor-pointer transition-colors duration-150 hover:border-red ${className}`}>
-      {ok ? 'Copiado ✓' : rotulo}
+    <button type="button" onClick={copiar} aria-live="polite"
+      className={`h-10 px-3 shrink-0 rounded-lg border border-line bg-panel text-sm font-bold cursor-pointer transition-colors duration-150 hover:border-ink ${ok ? 'text-ok border-ok' : ''} ${className}`}>
+      {ok ? 'Copiado' : rotulo}
     </button>
   )
 }
 
-export function Chip({ ativo, onClick, children }: { ativo: boolean; onClick: () => void; children: ReactNode }) {
+export function Chip({ ativo, onClick, children, cor }: { ativo: boolean; onClick: () => void; children: ReactNode; cor?: string }) {
   return (
     <button type="button" onClick={onClick} aria-pressed={ativo}
-      className={`h-11 px-4 rounded-full border text-sm font-medium whitespace-nowrap cursor-pointer transition-colors duration-150 ${ativo ? 'bg-red text-white border-red' : 'bg-panel border-line text-ink'}`}>
+      className={`h-10 px-3.5 rounded-full border text-sm font-bold whitespace-nowrap cursor-pointer transition-colors duration-150 flex items-center gap-2 ${ativo ? 'bg-ink text-panel border-ink' : 'bg-panel border-line text-ink hover:border-ink'}`}>
+      {cor && <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ background: cor }} aria-hidden />}
       {children}
     </button>
   )

@@ -5,7 +5,7 @@ import { Cartao, Titulo } from '../../components/ui'
 export function Conceitos() {
   return (
     <div>
-      <Titulo>Conceitos</Titulo>
+      <Titulo voltar="/guia">Conceitos</Titulo>
       <div className="grid gap-3 sm:grid-cols-2">
         {conhecimento.conceitos.map((c) => (
           <Cartao key={c.titulo}><h2 className="text-lg mb-1">{c.titulo}</h2><Html html={c.texto_html} /></Cartao>
@@ -18,7 +18,7 @@ export function Conceitos() {
 export function Quimicas() {
   return (
     <div>
-      <Titulo>As químicas</Titulo>
+      <Titulo voltar="/guia">As químicas</Titulo>
       <div className="grid gap-3 sm:grid-cols-2">
         {conhecimento.quimicas.map((q) => (
           <div key={q.nome} className="bg-panel border border-line border-l-8 rounded-xl p-4" style={{ borderLeftColor: q.cor }}>
@@ -38,7 +38,7 @@ export function Quimicas() {
 export function Materiais() {
   return (
     <div>
-      <Titulo>Materiais e substratos</Titulo>
+      <Titulo voltar="/guia">Materiais e substratos</Titulo>
       <div className="grid gap-3">
         {conhecimento.materiais.map((m) => (
           <Cartao key={m.material}>
@@ -58,7 +58,7 @@ export function Materiais() {
 export function Problemas() {
   return (
     <div>
-      <Titulo sub="O problema que aparece na obra e o produto que resolve.">Problemas e soluções</Titulo>
+      <Titulo voltar="/guia" sub="O problema que aparece na obra e o produto que resolve.">Problemas e soluções</Titulo>
       <div className="grid gap-3 sm:grid-cols-2">
         {conhecimento.problema_solucao.map((p) => (
           <Cartao key={p.cliente_diz}>
@@ -75,7 +75,7 @@ export function Problemas() {
 export function Aplicar() {
   return (
     <div>
-      <Titulo>Como aplicar</Titulo>
+      <Titulo voltar="/guia">Como aplicar</Titulo>
       <div className="grid gap-3 sm:grid-cols-2">
         {conhecimento.como_aplicar.map((c) => (
           <Cartao key={c.titulo}>
@@ -91,7 +91,7 @@ export function Aplicar() {
 export function Regras() {
   return (
     <div>
-      <Titulo sub="Valem para qualquer marca e qualquer aplicação.">Regras de ouro</Titulo>
+      <Titulo voltar="/guia" sub="Valem para qualquer marca e qualquer aplicação.">Regras de ouro</Titulo>
       <ol className="list-none p-0 m-0 grid gap-3">
         {conhecimento.regras_tecnicas_gerais.map((r, i) => (
           <li key={r} className="flex gap-3 bg-panel border border-line rounded-xl p-4">

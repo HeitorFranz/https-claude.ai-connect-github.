@@ -25,7 +25,7 @@ export default function Biblioteca() {
 
   return (
     <div>
-      <Titulo sub="Arquivos da pasta Unipega no Drive. Os links só abrem para quem tem acesso à pasta.">Biblioteca do Drive</Titulo>
+      <Titulo voltar="/guia" sub="Arquivos da pasta Unipega no Drive. Os links só abrem para quem tem acesso à pasta.">Biblioteca do Drive</Titulo>
       <div className="grid gap-3 mb-4">
         <CampoBusca valor={busca} mudar={(v) => atualizar('q', v)} rotulo="Buscar arquivo" />
         <div className="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4">

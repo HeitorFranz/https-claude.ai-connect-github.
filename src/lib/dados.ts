@@ -83,6 +83,26 @@ export function fichasDoProduto(id: string): [string, Ficha][] {
 
 export const familias = [...new Set(produtos.map((p) => p.familia))]
 
+/** Cor por família: agrupa por química/uso para a lista ser lida de relance. */
+export const corFamilia: Record<string, string> = {
+  'Silicones acéticos': '#2f6fd6',
+  'Silicones neutros': '#0f9b9b',
+  'Acrílicos': '#8a6bd1',
+  'Selantes híbridos': '#d0202e',
+  'Adesivos híbridos': '#e0662a',
+  'Poliuretanos': '#a33a5b',
+  'Espumas PU': '#d9a400',
+  'Adesivos e colas': '#5b7c2e',
+  'Fitas': '#6b7480',
+  'Fixação adesiva': '#6b7480',
+  'Vedação sanitária': '#3d8fc4',
+  'Aerossóis': '#2b2f36',
+  'Tintas spray': '#c23d8a',
+  'Corantes': '#c23d8a',
+  'Casa e limpeza': '#1e8e4e',
+}
+export const cor = (familia: string) => corFamilia[familia] ?? '#6b7480'
+
 export function normalizar(s: string): string {
   return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
 }

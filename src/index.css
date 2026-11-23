@@ -1,31 +1,38 @@
 @import "tailwindcss";
 
-/* Identidade (SPEC §7): pedra, tinta, vermelho tijolo, amarelo segurança, verde/vermelho/âmbar */
+/* Paleta: concreto (fundo), grafite (barra e texto), vermelho Unipega (ação/ativo),
+   amarelo segurança (destaque da melhor opção), verde/vermelho/âmbar (pode / não use / confirmar). */
 :root {
   color-scheme: light;
-  --bg: #efece7;
+  --bg: #eceef0;
   --panel: #ffffff;
-  --ink: #151311;
-  --mute: #5d5750;
-  --line: #d6d0c7;
-  --red: #c8371e;
-  --redbg: #fbe3dd;
-  --yel: #f2c230;
-  --ok: #1f8a4c;
-  --no: #c8371e;
-  --mid: #c98a00;
+  --ink: #1d2329;
+  --mute: #5b6670;
+  --line: #d5dade;
+  --bar: #1f262d;
+  --bar-ink: #e8ecef;
+  --red: #d0202e;
+  --redbg: #fde8ea;
+  --yel: #ffc629;
+  --yelbg: #fff6d6;
+  --ok: #1e8e4e;
+  --okbg: #e4f4ea;
+  --no: #c62828;
+  --mid: #b7791f;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --bg: #161412; --panel: #211e1b; --ink: #efebe5; --mute: #a9a196; --line: #3a3530;
-    --red: #ff6a4d; --redbg: #3a1d16; --yel: #e8b820; --ok: #4fd08a; --no: #ff6a4d; --mid: #f0b93a;
+    --bg: #14181c; --panel: #1d2329; --ink: #e8ecef; --mute: #9aa5af; --line: #323b44;
+    --bar: #0f1316; --bar-ink: #e8ecef; --red: #ff4b57; --redbg: #3a1a1e; --yel: #ffd35c; --yelbg: #3a3218;
+    --ok: #4cc884; --okbg: #17302240; --no: #ff6b6b; --mid: #f0b93a;
   }
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #161412; --panel: #211e1b; --ink: #efebe5; --mute: #a9a196; --line: #3a3530;
-  --red: #ff6a4d; --redbg: #3a1d16; --yel: #e8b820; --ok: #4fd08a; --no: #ff6a4d; --mid: #f0b93a;
+  --bg: #14181c; --panel: #1d2329; --ink: #e8ecef; --mute: #9aa5af; --line: #323b44;
+  --bar: #0f1316; --bar-ink: #e8ecef; --red: #ff4b57; --redbg: #3a1a1e; --yel: #ffd35c; --yelbg: #3a3218;
+  --ok: #4cc884; --okbg: #17302240; --no: #ff6b6b; --mid: #f0b93a;
 }
 
 @theme inline {
@@ -35,18 +42,23 @@
   --color-ink: var(--ink);
   --color-mute: var(--mute);
   --color-line: var(--line);
+  --color-bar: var(--bar);
+  --color-bar-ink: var(--bar-ink);
   --color-red: var(--red);
   --color-redbg: var(--redbg);
   --color-yel: var(--yel);
+  --color-yelbg: var(--yelbg);
   --color-ok: var(--ok);
+  --color-okbg: var(--okbg);
   --color-no: var(--no);
   --color-mid: var(--mid);
 }
 
 @layer base {
   html, body { overflow-x: clip; }
-  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 "Schibsted Grotesk", system-ui, sans-serif; }
-  h1, h2, h3 { font-weight: 800; line-height: 1.08; letter-spacing: -0.02em; text-wrap: balance; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 "Schibsted Grotesk", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4 { font-weight: 800; line-height: 1.1; letter-spacing: -0.015em; text-wrap: balance; margin: 0; }
   a { color: var(--red); }
   :focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 }

@@ -4,7 +4,7 @@ import RequireAuth from './auth/RequireAuth'
 import Layout from './components/Layout'
 import Login from './pages/Login'
 import Inicio from './pages/Inicio'
-import AreaProdutos from './pages/produtos'
+import { AreaGuia, AreaProdutos } from './pages/produtos'
 import Consulta from './pages/consulta/Consulta'
 
 export default function App() {
@@ -18,6 +18,7 @@ export default function App() {
               <Route index element={<Inicio />} />
               <Route path="consulta" element={<Consulta />} />
               <Route path="produtos/*" element={<AreaProdutos />} />
+              <Route path="guia/*" element={<AreaGuia />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
           </Route>

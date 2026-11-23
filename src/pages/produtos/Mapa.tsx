@@ -11,7 +11,7 @@ export default function Mapa() {
   const material = sel === null ? null : matriz.materiais[sel]
   return (
     <div>
-      <Titulo sub="Toque num material para ver a dica de venda.">Mapa química × material</Titulo>
+      <Titulo voltar="/guia" sub="Toque num material para ver a dica de venda.">Mapa química × material</Titulo>
       <div className="relative bg-panel border border-line rounded-xl p-3 overflow-x-auto">
         <table className="border-collapse w-full min-w-[720px] text-sm">
           <thead>
